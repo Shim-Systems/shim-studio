@@ -111,70 +111,78 @@
                     <h2 class="text-2xl md:text-3xl font-bold tracking-wider text-white font-telemetry uppercase">// HOW IT WORKS</h2>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 lg:gap-5 items-stretch text-xs font-telemetry text-slate-400 pt-4">
+                <!-- Relative container to hold the vertical line on mobile -->
+                <div class="relative">
                     
-                    <!-- Left: Raw Inputs (Wedge 1 - Deep Matte Slate, Sharp Corners) -->
-                    <div class="bg-[#161920] text-slate-100 p-6 flex flex-col justify-between rounded-none border border-slate-800/60 shadow-sm relative z-0 transition-all duration-300 hover:border-slate-700/80">
-                        <div>
-                            <div class="text-[10px] uppercase tracking-wider font-bold text-slate-400 mb-4">// PHYSICAL INPUTS</div>
-                            <div class="space-y-3">
-                                <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                    <span class="font-medium text-slate-200 truncate">material_docket.pdf</span>
-                                    <span class="text-amber-400 font-bold shrink-0 text-[10px] tracking-wider bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">[SUPPLIER]</span>
-                                </div>
-                                <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                    <span class="font-medium text-slate-200 truncate">fleet_gps_canbus.log</span>
-                                    <span class="text-blue-400 font-bold shrink-0 text-[10px] tracking-wider bg-blue-400/10 px-2 py-0.5 rounded border border-blue-400/20">[TRUCK #104]</span>
-                                </div>
-                                <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                    <span class="font-medium text-slate-200 truncate">steel_mill_cert.pdf</span>
-                                    <span class="text-[#FF5A00] font-bold shrink-0 text-[10px] tracking-wider bg-orange-500/10 px-2 py-0.5 rounded border border-orange-500/20">[EPD]</span>
+                    <!-- Schematic Vertical Connector Line (Mobile portrait only, hidden on desktop) -->
+                    <div class="absolute left-1/2 top-4 bottom-4 w-px border-l border-dashed border-[#FF5A00]/30 -translate-x-1/2 md:hidden z-0"></div>
+
+                    <!-- Increased vertical gap on mobile (gap-12) to reveal the connector line -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-4 lg:gap-5 items-stretch text-xs font-telemetry text-slate-400 pt-4 relative z-10">
+                        
+                        <!-- Left: Raw Inputs (Wedge 1 - Deep Matte Slate, Sharp Corners) -->
+                        <div class="bg-[#161920] text-slate-100 p-6 flex flex-col justify-between rounded-none border border-slate-800/60 shadow-sm relative z-0 transition-all duration-300 hover:border-slate-700/80">
+                            <div>
+                                <div class="text-[10px] uppercase tracking-wider font-bold text-slate-400 mb-4">// PHYSICAL INPUTS</div>
+                                <div class="space-y-3">
+                                    <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
+                                        <span class="font-medium text-slate-200 truncate">material_docket.pdf</span>
+                                        <span class="text-amber-400 font-bold shrink-0 text-[10px] tracking-wider bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">[SUPPLIER]</span>
+                                    </div>
+                                    <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
+                                        <span class="font-medium text-slate-200 truncate">fleet_gps_canbus.log</span>
+                                        <span class="text-blue-400 font-bold shrink-0 text-[10px] tracking-wider bg-blue-400/10 px-2 py-0.5 rounded border border-blue-400/20">[TRUCK #104]</span>
+                                    </div>
+                                    <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
+                                        <span class="font-medium text-slate-200 truncate">steel_mill_cert.pdf</span>
+                                        <span class="text-[#FF5A00] font-bold shrink-0 text-[10px] tracking-wider bg-orange-500/10 px-2 py-0.5 rounded border border-orange-500/20">[EPD]</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Center: SHIM Engine (Wedge 2 - Solid High-Contrast Orange, Visually Elevated Spacer with Glowing Shadow) -->
-                    <div class="border border-[#FF5A00] bg-[#FF5A00] text-white rounded-none p-6 relative overflow-hidden flex flex-col justify-between z-10 md:-translate-y-6 shadow-[0_25px_50px_-12px_rgba(255,90,0,0.35)] md:hover:-translate-y-8 hover:-translate-y-2 transition-all duration-300">
-                        <div class="absolute top-0 right-0 h-16 w-16 bg-gradient-to-bl from-white/10 to-transparent"></div>
-                        <div>
-                            <div class="text-[10px] text-white/80 uppercase tracking-wider font-bold mb-4">// OPERATIONAL SHIM</div>
-                            <p class="text-[11px] text-white leading-relaxed mb-6">
-                                Aligns messy transport, concrete, and materials records directly with enterprise compliance schemas. Runs inside your firewall to protect commercial margins.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="bg-white/10 border border-white/25 rounded-md px-3 py-2 flex justify-between items-center text-[10px] text-white">
-                                <span class="tracking-wide text-white/90">System Alignment</span>
-                                <span class="font-bold flex items-center gap-1.5 text-white">
-                                    <span class="h-1.5 w-1.5 rounded-full bg-white animate-pulse"></span>
-                                    PERFECT FIT
-                                </span>
+                        <!-- Center: SHIM Engine (Wedge 2 - Solid High-Contrast Orange, Visually Elevated Spacer with Glowing Shadow) -->
+                        <div class="border border-[#FF5A00] bg-[#FF5A00] text-white rounded-none p-6 relative overflow-hidden flex flex-col justify-between z-10 md:-translate-y-6 shadow-[0_25px_50px_-12px_rgba(255,90,0,0.35)] md:hover:-translate-y-8 hover:-translate-y-0 transition-all duration-300">
+                            <div class="absolute top-0 right-0 h-16 w-16 bg-gradient-to-bl from-white/10 to-transparent"></div>
+                            <div>
+                                <div class="text-[10px] text-white/80 uppercase tracking-wider font-bold mb-4">// OPERATIONAL SHIM</div>
+                                <p class="text-[11px] text-white leading-relaxed mb-6">
+                                    Aligns messy transport, concrete, and materials records directly with enterprise compliance schemas. Runs inside your firewall to protect commercial margins.
+                                </p>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Right: Egress/Compliance Target (Wedge 3 - Deep Matte Slate, Sharp Corners) -->
-                    <div class="bg-[#161920] text-slate-100 p-6 flex flex-col justify-between rounded-none border border-slate-800/60 shadow-sm relative z-0 transition-all duration-300 hover:border-slate-700/80">
-                        <div>
-                            <div class="text-[10px] uppercase tracking-wider font-bold text-slate-400 mb-4">// VERIFIED OUTPUT</div>
-                            <div class="space-y-3">
-                                <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                    <span class="font-medium text-slate-200 truncate">embodied_carbon_kg</span>
-                                    <span class="text-emerald-400 font-bold shrink-0 text-[10px] tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">[MATERIAL]</span>
-                                </div>
-                                <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                    <span class="font-medium text-slate-200 truncate">refrigeration_pto_fuel</span>
-                                    <span class="text-emerald-400 font-bold shrink-0 text-[10px] tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">[FTC CLAIMS]</span>
-                                </div>
-                                <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between text-emerald-300 gap-3 min-w-0 shadow-xs">
-                                    <span class="font-semibold truncate text-emerald-100">Activity Verification</span>
-                                    <span class="font-bold shrink-0 text-emerald-400 flex items-center gap-1">✓ APPROVED</span>
+                            <div>
+                                <div class="bg-white/10 border border-white/25 rounded-md px-3 py-2 flex justify-between items-center text-[10px] text-white">
+                                    <span class="tracking-wide text-white/90">System Alignment</span>
+                                    <span class="font-bold flex items-center gap-1.5 text-white">
+                                        <span class="h-1.5 w-1.5 rounded-full bg-white animate-pulse"></span>
+                                        PERFECT FIT
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                        <!-- Right: Egress/Compliance Target (Wedge 3 - Deep Matte Slate, Sharp Corners) -->
+                        <div class="bg-[#161920] text-slate-100 p-6 flex flex-col justify-between rounded-none border border-slate-800/60 shadow-sm relative z-0 transition-all duration-300 hover:border-slate-700/80">
+                            <div>
+                                <div class="text-[10px] uppercase tracking-wider font-bold text-slate-400 mb-4">// VERIFIED OUTPUT</div>
+                                <div class="space-y-3">
+                                    <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
+                                        <span class="font-medium text-slate-200 truncate">embodied_carbon_kg</span>
+                                        <span class="text-emerald-400 font-bold shrink-0 text-[10px] tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">[MATERIAL]</span>
+                                    </div>
+                                    <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
+                                        <span class="font-medium text-slate-200 truncate">refrigeration_pto_fuel</span>
+                                        <span class="text-emerald-400 font-bold shrink-0 text-[10px] tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">[FTC CLAIMS]</span>
+                                    </div>
+                                    <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between text-emerald-300 gap-3 min-w-0 shadow-xs">
+                                        <span class="font-semibold truncate text-emerald-100">Activity Verification</span>
+                                        <span class="font-bold shrink-0 text-emerald-400 flex items-center gap-1">✓ APPROVED</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
