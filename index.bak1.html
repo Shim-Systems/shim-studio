@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIM | The Site-Gate Ledger</title>
+    <title>SHIM | Supply Chain Data Automation</title>
     <!-- Inline SVG Favicon representing the signature SHIM orange slash -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path d=%22M18 4h6L14 28H8z%22 fill=%22%23FF5A00%22/></svg>">
+    <link class="icon" type="image/svg+xml" rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path d=%22M18 4h6L14 28H8z%22 fill=%22%23FF5A00%22/></svg>">
     <!-- Tailwind CSS v4 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -40,9 +40,9 @@
 
             <!-- Tailscale-style Minimalist Navigation (Synchronized top-to-bottom page order) -->
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
-                <a href="#solutions" class="text-slate-600 hover:text-slate-900 transition-colors">Solutions</a>
                 <a href="#how-it-works" class="text-slate-600 hover:text-slate-900 transition-colors">How It Works</a>
-                <a href="#haas" class="text-slate-600 hover:text-slate-900 transition-colors">The HaaS Edge</a>
+                <a href="#solutions" class="text-slate-600 hover:text-slate-900 transition-colors">Solutions</a>
+                <a href="#data-isolation" class="text-slate-600 hover:text-slate-900 transition-colors">Data Isolation</a>
                 <a href="#contact" class="hidden sm:inline-flex bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold py-2.5 px-4 rounded-[4px] transition-all hover:shadow-sm">
                     Contact Us
                 </a>
@@ -58,9 +58,9 @@
 
         <!-- Mobile Dropdown Navigation Menu -->
         <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-slate-200/80 px-6 py-6 flex flex-col space-y-4 shadow-lg z-40 transition-all duration-300">
-            <a href="#solutions" class="mobile-nav-link text-slate-600 hover:text-slate-900 text-base font-medium py-1">Solutions</a>
             <a href="#how-it-works" class="mobile-nav-link text-slate-600 hover:text-slate-900 text-base font-medium py-1">How It Works</a>
-            <a href="#haas" class="mobile-nav-link text-slate-600 hover:text-slate-900 text-base font-medium py-1">The HaaS Edge</a>
+            <a href="#solutions" class="mobile-nav-link text-slate-600 hover:text-slate-900 text-base font-medium py-1">Solutions</a>
+            <a href="#data-isolation" class="mobile-nav-link text-slate-600 hover:text-slate-900 text-base font-medium py-1">Data Isolation</a>
             <a href="#contact" class="mobile-nav-link block text-center bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold py-3 px-4 rounded-[4px] mt-2">
                 Contact Us
             </a>
@@ -74,12 +74,12 @@
         <section class="max-w-5xl mx-auto px-6 pt-16 md:pt-20 pb-12 text-center space-y-8">
             
             <h1 class="text-4xl md:text-6xl font-bold text-[#111317] tracking-tight max-w-4xl mx-auto leading-tight md:leading-[1.12]">
-                The Site-Gate Ledger. <br class="hidden md:block">
-                Compliance with zero IT friction.
+                Clean operational data. <br class="hidden md:block">
+                Zero IT friction.
             </h1>
             
             <p class="text-slate-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                SHIM is an on-premises data appliance deployed at the site gate to translate raw dockets and logs into audit-proof compliance records and fuel tax rebates.
+                SHIM is a plug-and-play, on-premises data appliance connecting transport fleets, civil contractors, and industrial suppliers directly to enterprise compliance ledgers. Zero-retention cloud processing. Absolute data assurance.
             </p>
 
             <!-- Typographic Dictionary Definition Box -->
@@ -91,138 +91,70 @@
                 <div class="text-[9px] text-slate-400 font-telemetry uppercase tracking-wider mt-0.5">noun & verb</div>
                 <div class="mt-2.5 space-y-1.5 text-[11px] text-slate-500 leading-relaxed border-t border-slate-100 pt-2">
                     <p><span class="text-[#FF5A00] font-telemetry font-bold mr-1">1.</span> A thin piece of material used to align physical parts, make them fit, or reduce friction.</p>
-                    <p><span class="text-[#FF5A00] font-telemetry font-bold mr-1">2.</span> A plug-and-play, on-premises data appliance deployed at the site gate to capture physical dockets, automate material auditing, and recover off-road fuel rebates.</p>
+                    <p><span class="text-[#FF5A00] font-telemetry font-bold mr-1">2.</span> Lightweight local-first software deployed to bridge operational outputs with enterprise compliance platforms.</p>
                 </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+                <a href="mailto:office@shimsys.com?subject=Systems%20Integration%20Inquiry" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-8 rounded-[4px] text-sm transition-all hover:shadow-md hover:-translate-y-0.5 duration-150">
+                    Contact Us
+                </a>
+                <a href="#solutions" class="w-full sm:w-auto text-slate-600 hover:text-slate-955 font-semibold py-3 px-4 text-sm flex items-center justify-center gap-1.5 transition-colors">
+                    View Solutions ──&gt;
+                </a>
             </div>
         </section>
 
-        <!-- Section 2: Solutions -->
-        <section id="solutions" class="max-w-5xl mx-auto px-6 py-20 border-t border-slate-200/50">
-            <div class="mb-12 text-center sm:text-left">
-                <h2 class="text-3xl font-bold tracking-wide text-slate-900 font-telemetry uppercase">// SOLUTIONS</h2>
-                <p class="text-slate-500 text-sm mt-2 max-w-xl">
-                    Shifting site-gate capture from an administrative compliance overhead to an offensive, margin-protecting, and revenue-generating asset.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                
-                <!-- Pillar 01: Carbon (ASRS Scope 3) -->
-                <div class="border border-slate-200/80 bg-white rounded-xl p-8 flex flex-col justify-between space-y-8 shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-[#FF5A00]/50 transition-all duration-300">
-                    <div class="space-y-4">
-                        <div class="text-[10px] font-telemetry text-slate-400 uppercase tracking-widest font-semibold">PILLAR_01 // ASSET METRICS</div>
-                        <h3 class="text-xl font-bold text-slate-900 font-structural tracking-tight">ASRS Scope 3 Verification</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Replace spend-based estimates with primary activity data (Category 1 & 4) captured directly from physical dockets. Establishes a verified baseline of trust for mandatory corporate disclosures.
-                        </p>
-                    </div>
-                    <div class="border-t border-slate-100 pt-4 space-y-2 text-xs font-telemetry text-slate-500">
-                        <div class="flex justify-between">
-                            <span>Compliance Target</span>
-                            <span class="text-slate-955 font-semibold text-right">AASB S2 / Scope 3</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span>Primary Input</span>
-                            <span class="text-slate-900 font-semibold text-right">Material Delivery Dockets</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pillar 02: Materials (Recycled First) -->
-                <div class="border border-slate-200/80 bg-white rounded-xl p-8 flex flex-col justify-between space-y-8 shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-[#FF5A00]/50 transition-all duration-300">
-                    <div class="space-y-4">
-                        <div class="text-[10px] font-telemetry text-slate-400 uppercase tracking-widest font-semibold">PILLAR_02 // MATERIALS</div>
-                        <h3 class="text-xl font-bold text-slate-900 font-structural tracking-tight">Circular Materials & VIDA</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Track the physical volume and provenance of recycled aggregates laid on-site. Meets VIDA/ecologiQ reporting thresholds to unlock progress payments and secure public tenders.
-                        </p>
-                    </div>
-                    <div class="border-t border-slate-100 pt-4 space-y-2 text-xs font-telemetry text-slate-500">
-                        <div class="flex justify-between">
-                            <span>Compliance Target</span>
-                            <span class="text-slate-955 font-semibold text-right">VIDA / ecologiQ Recycled First</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span>Primary Input</span>
-                            <span class="text-slate-900 font-semibold text-right">Sourcing manifests & dockets</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pillar 03: Revenue (Fuel Tax Credits) -->
-                <div class="border border-slate-200/80 bg-white rounded-xl p-8 flex flex-col justify-between space-y-8 shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-[#FF5A00]/50 transition-all duration-300">
-                    <div class="space-y-4">
-                        <div class="text-[10px] font-telemetry text-slate-400 uppercase tracking-wider font-semibold">PILLAR_03 // REVENUE</div>
-                        <h3 class="text-xl font-bold text-slate-900 font-structural tracking-tight">Fuel Tax Credit Rebates</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Isolate off-road diesel deliveries to stationary plant and auxiliary PTO units. Generates the audit-proof records required to claim the maximum off-road ATO rebate of ~$0.46+/L.
-                        </p>
-                    </div>
-                    <div class="border-t border-slate-100 pt-4 space-y-2 text-xs font-telemetry text-slate-500">
-                        <div class="flex justify-between">
-                            <span>Cash Opportunity</span>
-                            <span class="text-slate-955 font-semibold text-right">ATO Off-Road Rebate (~$0.46+/L)</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span>Primary Input</span>
-                            <span class="text-slate-900 font-semibold text-right">Fuel drops & equipment run logs</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Section 3: Visual Pipeline Flow -->
+        <!-- Section 2: Visual Pipeline Flow (Immersive Full-Width Dark Section Centerpiece) -->
         <section id="how-it-works" class="bg-[#0F1115] border-y border-slate-800/80 py-24 w-full">
             <div class="max-w-5xl mx-auto px-4 sm:px-6">
                 <!-- Section Header inside the Dark Block to frame the diagram -->
                 <div class="mb-14 text-center">
-                    <h2 class="text-2xl md:text-3xl font-bold tracking-wider text-white font-telemetry uppercase">// THE SHIM PIPELINE</h2>
+                    <h2 class="text-2xl md:text-3xl font-bold tracking-wider text-white font-telemetry uppercase">// HOW IT WORKS</h2>
                 </div>
 
                 <!-- Relative container to hold the vertical line on mobile -->
                 <div class="relative">
                     
-                    <!-- Schematic Vertical Connector Line -->
+                    <!-- Schematic Vertical Connector Line (Mobile portrait only, hidden on desktop) -->
                     <div class="absolute left-1/2 top-4 bottom-4 w-px border-l-2 border-dashed border-[#FF5A00]/60 -translate-x-1/2 md:hidden z-0"></div>
 
                     <!-- Increased vertical gap on mobile (gap-12) to reveal the connector line -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-4 lg:gap-5 items-stretch text-xs font-telemetry text-slate-400 pt-4 relative z-10">
                         
-                        <!-- Left: Raw Inputs -->
+                        <!-- Left: Raw Inputs (Wedge 1 - Deep Matte Slate, Sharp Corners) -->
                         <div class="bg-[#161920] text-slate-100 p-6 flex flex-col justify-between rounded-none border border-slate-800/60 shadow-sm relative z-0 transition-all duration-300 hover:border-slate-700/80">
                             <div>
-                                <div class="text-[10px] uppercase tracking-wider font-bold text-slate-400 mb-4">// PHYSICAL SITE INPUTS</div>
+                                <div class="text-[10px] uppercase tracking-wider font-bold text-slate-400 mb-4">// PHYSICAL INPUTS</div>
                                 <div class="space-y-3">
                                     <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                        <span class="font-medium text-slate-200 truncate">concrete_mix_docket.pdf</span>
-                                        <span class="text-amber-400 font-bold shrink-0 text-[10px] tracking-wider bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">[ MPa / SCM% ]</span>
+                                        <span class="font-medium text-slate-200 truncate">concrete_docket.pdf</span>
+                                        <span class="text-amber-400 font-bold shrink-0 text-[10px] tracking-wider bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">[CONCRETE]</span>
                                     </div>
                                     <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                        <span class="font-medium text-slate-200 truncate">recycled_aggregate.pdf</span>
-                                        <span class="text-blue-400 font-bold shrink-0 text-[10px] tracking-wider bg-blue-400/10 px-2 py-0.5 rounded border border-blue-400/20">[ Tonnage / VIDA ]</span>
+                                        <span class="font-medium text-slate-200 truncate">telematics_log.csv</span>
+                                        <span class="text-blue-400 font-bold shrink-0 text-[10px] tracking-wider bg-blue-400/10 px-2 py-0.5 rounded border border-blue-400/20">[FLEET LOG]</span>
                                     </div>
                                     <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                        <span class="font-medium text-slate-200 truncate">off_road_diesel.pdf</span>
-                                        <span class="text-[#FF5A00] font-bold shrink-0 text-[10px] tracking-wider bg-orange-500/10 px-2 py-0.5 rounded border border-orange-500/20">[ PTO / Liters ]</span>
+                                        <span class="font-medium text-slate-200 truncate">mill_certificate.pdf</span>
+                                        <span class="text-[#FF5A00] font-bold shrink-0 text-[10px] tracking-wider bg-orange-500/10 px-2 py-0.5 rounded border border-orange-500/20">[STEEL CERT]</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Center: SHIM Hardware -->
+                        <!-- Center: SHIM Engine (Wedge 2 - Solid High-Contrast Orange, Visually Elevated Spacer with Glowing Shadow) -->
                         <div class="border border-[#FF5A00] bg-[#FF5A00] text-white rounded-none p-6 relative overflow-hidden flex flex-col justify-between z-10 md:-translate-y-6 shadow-[0_25px_50px_-12px_rgba(255,90,0,0.35)] md:hover:-translate-y-8 hover:-translate-y-0 transition-all duration-300">
                             <div class="absolute top-0 right-0 h-16 w-16 bg-gradient-to-bl from-white/10 to-transparent"></div>
                             <div>
-                                <div class="text-[10px] text-white/80 uppercase tracking-wider font-bold mb-4">// THE DIGITAL SHIM APPLIANCE</div>
+                                <div class="text-[10px] text-white/80 uppercase tracking-wider font-bold mb-4">// DIGITAL SHIM</div>
                                 <p class="text-[11px] text-white leading-relaxed mb-6">
-                                    A ruggedized, dustproof, fanless edge-compute hardware node running locally in your site offices. This plug-and-play micro-appliance hosts sandboxed extraction logic, calculates regional offsets, and logs metadata locally with zero dependency on central cloud infrastructure.
+                                    A zero-configuration, on-premises data appliance running locally within your secure IT boundaries. It programmatically parses unstructured freight telemetry, construction materials, and physical logistics records to output verified compliance factors without exposing raw commercial cost structures.
                                 </p>
                             </div>
                             <div>
                                 <div class="bg-white/10 border border-white/25 rounded-md px-3 py-2 flex justify-between items-center text-[10px] text-white">
-                                    <span class="tracking-wide text-white/90">Hardware Status</span>
+                                    <span class="tracking-wide text-white/90">System Alignment</span>
                                     <span class="font-bold flex items-center gap-1.5 text-white">
                                         <span class="h-1.5 w-1.5 rounded-full bg-white animate-pulse"></span>
                                         ON-PREM DEPLOYED
@@ -231,22 +163,22 @@
                             </div>
                         </div>
 
-                        <!-- Right: Egress/Compliance Target -->
+                        <!-- Right: Egress/Compliance Target (Wedge 3 - Deep Matte Slate, Sharp Corners) -->
                         <div class="bg-[#161920] text-slate-100 p-6 flex flex-col justify-between rounded-none border border-slate-800/60 shadow-sm relative z-0 transition-all duration-300 hover:border-slate-700/80">
                             <div>
-                                <div class="text-[10px] uppercase tracking-wider font-bold text-slate-400 mb-4">// STRATEGIC OUTFLOWS</div>
+                                <div class="text-[10px] uppercase tracking-wider font-bold text-slate-400 mb-4">// VERIFIED OUTPUT</div>
                                 <div class="space-y-3">
                                     <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
                                         <span class="font-medium text-slate-200 truncate">compliance_ledger_export.csv</span>
-                                        <span class="text-emerald-400 font-bold shrink-0 text-[10px] tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">[CARBON]</span>
+                                        <span class="text-emerald-400 font-bold shrink-0 text-[10px] tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">[LEDGER]</span>
                                     </div>
                                     <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                        <span class="font-medium text-slate-200 truncate">vida_compliance_report.csv</span>
-                                        <span class="text-emerald-400 font-bold shrink-0 text-[10px] tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">[RECYCLED]</span>
+                                        <span class="font-medium text-slate-200 truncate">enterprise_esg_payload.csv</span>
+                                        <span class="text-emerald-400 font-bold shrink-0 text-[10px] tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">[ESG PLATFORM]</span>
                                     </div>
-                                    <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between gap-3 min-w-0 shadow-xs">
-                                        <span class="font-medium text-slate-200 truncate">ato_ftc_apportionment.xlsx</span>
-                                        <span class="text-emerald-400 font-bold shrink-0 text-[10px] tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">[TAX REBATE]</span>
+                                    <div class="border border-white/5 bg-white/5 p-3 rounded-md flex items-center justify-between text-emerald-300 gap-3 min-w-0 shadow-xs">
+                                        <span class="font-medium truncate text-emerald-100">cryptographic_audit_trail.json</span>
+                                        <span class="font-bold shrink-0 text-emerald-400 flex items-center gap-1">✓ APPROVED</span>
                                     </div>
                                 </div>
                             </div>
@@ -257,84 +189,129 @@
             </div>
         </section>
 
-        <!-- Section 4: The HaaS Edge -->
-        <section id="haas" class="max-w-5xl mx-auto px-6 py-24 border-t border-slate-200/50">
-            <div class="mb-16 text-center sm:text-left">
-                <h2 class="text-3xl font-bold tracking-wide text-slate-900 font-telemetry uppercase">// THE HAAS EDGE</h2>
-                <p class="text-xl font-structural text-slate-700 mt-2 max-w-2xl font-bold">
-                    A physical edge checkpoint engineered directly for on-site operations.
-                </p>
-                <p class="text-slate-500 text-sm mt-4 max-w-3xl leading-relaxed">
-                    Our <strong class="text-[#FF5A00] font-semibold">Hardware-as-a-Service (HaaS)</strong> model deploys a rugged, plug-and-play edge computer (the SHIM) directly in your site offices. By capturing audit-ready data right at the physical boundary, the SHIM appliance bypasses complex IT integrations, respects subcontractor business secrets, and operates reliably in the most demanding site environments.
-                </p>
+        <!-- Section 3: Solutions (Tailscale Tab-like Cards - Subtle Outline Style) -->
+        <section id="solutions" class="max-w-5xl mx-auto px-6 py-24">
+            <div class="mb-12 text-center sm:text-left">
+                <h2 class="text-3xl font-bold tracking-wide text-slate-900 font-telemetry uppercase">// SOLUTIONS</h2>
             </div>
 
-            <!-- 6 Key Selling Points Comparison Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 
-                <!-- 1. Bypasses the IT Gatekeeper Wall -->
-                <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-slate-300 transition-all">
-                    <div>
-                        <div class="text-[10px] font-telemetry text-[#FF5A00] uppercase tracking-widest font-bold mb-3">// FEATURE_01</div>
-                        <h4 class="text-base font-bold text-slate-900 font-structural tracking-tight mb-4">Bypasses the IT Gatekeeper Wall</h4>
-                        <div class="text-xs leading-relaxed text-slate-600">
-                            Our physical edge appliance operates as an air-gapped, outbound-only device strictly within the local site LAN. It requires zero corporate IT integration, zero firewall exceptions, and zero network modifications to work immediately.
+                <!-- Solution 01: Cold-Chain & Distribution Freight -->
+                <div class="border border-slate-200/80 bg-white rounded-xl p-8 flex flex-col justify-between space-y-8 shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-slate-300 transition-all">
+                    <div class="space-y-4">
+                        <div class="text-[10px] font-telemetry text-slate-400 uppercase tracking-widest font-semibold">SOLUTION_01</div>
+                        <h3 class="text-xl font-bold text-slate-900 font-structural tracking-tight">Cold-Chain & Distribution Freight</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Under AASB S2, heavy cold-chain operations supplying major retailers must split mobile transport combustion from auxiliary energy. We design on-premises translation pipelines to isolate transport fuel from stationary Power Take-Off (PTO) fuel card transactions by parsing local fleet diagnostic telemetry files—providing audit-ready carbon data while optimizing diesel tax offsets.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4 space-y-2 text-xs font-telemetry text-slate-500">
+                        <div class="flex justify-between">
+                            <span>Ingested Variables</span>
+                            <span class="text-slate-955 font-semibold text-right">total_fuel_litres, auxiliary_idle_litres, off_road_litres</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Integration Model</span>
+                            <span class="text-slate-900 font-semibold text-right">Local fleet telematics exports (CSV), fuel card transaction logs</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. Protects Subcontractor Pricing -->
-                <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-slate-300 transition-all">
-                    <div>
-                        <div class="text-[10px] font-telemetry text-[#FF5A00] uppercase tracking-widest font-bold mb-3">// FEATURE_02</div>
-                        <h4 class="text-base font-bold text-slate-900 font-structural tracking-tight mb-4">Protects Subcontractor Pricing</h4>
-                        <div class="text-xs leading-relaxed text-slate-600">
-                            The edge appliance extracts strictly physical metrics—like material volumes, aggregate grades, and transport runs—from delivery dockets, keeping confidential business pricing completely secure and off the cloud.
+                <!-- Solution 02: Civil Infrastructure & Capital Works -->
+                <div class="border border-slate-200/80 bg-white rounded-xl p-8 flex flex-col justify-between space-y-8 shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-slate-300 transition-all">
+                    <div class="space-y-4">
+                        <div class="text-[10px] font-telemetry text-slate-400 uppercase tracking-widest font-semibold">SOLUTION_02</div>
+                        <h3 class="text-xl font-bold text-slate-900 font-structural tracking-tight">Civil Infrastructure & Capital Works</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Builders managing new infrastructure assets, distribution hubs, or facility upgrades face critical administrative delays manually auditing materials dockets. We design custom local-first pipelines that scan unstructured batch records to extract physical volume and supplementary cementitious material (SCM%) variables—replacing un-auditable spend estimates.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4 space-y-2 text-xs font-telemetry text-slate-500">
+                        <div class="flex justify-between">
+                            <span>Ingested Variables</span>
+                            <span class="text-slate-955 font-semibold text-right">volume_m3, mix_design_code (MPa), SCM cement %</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Integration Model</span>
+                            <span class="text-slate-900 font-semibold text-right">Local dockets folder, appliance extraction engine, EPD registries</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. Collaborative Adoption -->
-                <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-slate-300 transition-all">
-                    <div>
-                        <div class="text-[10px] font-telemetry text-[#FF5A00] uppercase tracking-widest font-bold mb-3">// FEATURE_03</div>
-                        <h4 class="text-base font-bold text-slate-900 font-structural tracking-tight mb-4">Collaborative Adoption: Fast-Track Payments</h4>
-                        <div class="text-xs leading-relaxed text-slate-600">
-                            Capturing and pre-verifying dockets instantly at the gatehouse checkpoint eliminates end-of-month administrative matching disputes, allowing subcontractors to get progress claims approved and paid faster.
+                <!-- Solution 03: Structural Steel & Metal Fabrication -->
+                <div class="border border-slate-200/80 bg-white rounded-xl p-8 flex flex-col justify-between space-y-8 shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-slate-300 transition-all">
+                    <div class="space-y-4">
+                        <div class="text-[10px] font-telemetry text-slate-400 uppercase tracking-widest font-semibold">SOLUTION_03</div>
+                        <h3 class="text-xl font-bold text-slate-900 font-structural tracking-tight">Structural Steel & Metal Fabrication</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Generic ESG software cannot verify physical metallurgical provenance. We deploy local extraction engines to scan flat, unstructured Mill Test Certificates (MTCs)—extracting steel grade, heat numbers, and manufacturing origin (EAF vs. Blast Furnace) at the loading dock without complex workstation database integrations.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4 space-y-2 text-xs font-telemetry text-slate-500">
+                        <div class="flex justify-between">
+                            <span>Ingested Variables</span>
+                            <span class="text-slate-955 font-semibold text-right">steel_grade (300PLUS), heat_number, net_weight_kg, mill_origin</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Integration Model</span>
+                            <span class="text-slate-900 font-semibold text-right">Local mill certificate PDFs, material manifests, supplier EPDs</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 4. Circular Economy & Recycled First Auditing -->
-                <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-slate-300 transition-all">
-                    <div>
-                        <div class="text-[10px] font-telemetry text-[#FF5A00] uppercase tracking-widest font-semibold mb-3">// FEATURE_04</div>
-                        <h4 class="text-base font-bold text-slate-900 font-structural tracking-tight mb-4">Circular Economy & "Recycled First" Auditing</h4>
-                        <div class="text-xs leading-relaxed text-slate-600">
-                            Physical dockets are captured at the gate to automatically extract, verify, and compile recycled material volumes, generating audit-ready compliance reports without administrative double-handling.
-                        </div>
-                    </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Data Isolation -->
+        <section id="data-isolation" class="border-y border-slate-200/50 bg-white py-24">
+            <div class="max-w-5xl mx-auto px-6">
+                
+                <div class="max-w-3xl mb-16 space-y-4 text-center sm:text-left mx-auto sm:mx-0">
+                    <h2 class="text-3xl font-bold tracking-wide text-slate-900 leading-tight font-telemetry uppercase">// DATA ISOLATION</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        A major bottleneck of value-chain reporting is contractor trust. SHIM acts as a secure, on-premises data spacer—isolating proprietary commercial financials behind your firewall while utilizing ephemeral, zero-retention cloud sessions strictly for document data extraction.
+                    </p>
                 </div>
 
-                <!-- 5. Engineered for the Chaos of the Site Compound -->
-                <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-slate-300 transition-all">
-                    <div>
-                        <div class="text-[10px] font-telemetry text-[#FF5A00] uppercase tracking-widest font-bold mb-3">// FEATURE_05</div>
-                        <h4 class="text-base font-bold text-slate-900 font-structural tracking-tight mb-4">Engineered for the Chaos of the Site Compound</h4>
-                        <div class="text-xs leading-relaxed text-slate-600">
-                            Built for heavy construction environments, our fanless, dustproof industrial hardware features built-in electrical over-protection and a supercapacitor backup to ensure clean local database saves during sudden power cuts.
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Column 1 -->
+                    <div class="space-y-4 p-6 bg-slate-50/50 border border-slate-100 rounded-lg">
+                        <div class="h-8 w-8 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center">
+                            <svg class="h-4 w-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            </svg>
                         </div>
+                        <h3 class="text-base font-bold text-slate-900">Private Cost Metrics</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Your proprietary financial datasets—such as unit margins, vendor contract rates, and operational cost metrics—remain isolated strictly on-premises. While dockets are uploaded for temporary parsing, commercial financials are never captured or sent to the cloud.
+                        </p>
                     </div>
-                </div>
 
-                <!-- 6. Paid from Project "Preliminaries" -->
-                <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between shadow-[0_1px_3px_rgba(0,0,0,0.01)] hover:border-slate-300 transition-all">
-                    <div>
-                        <div class="text-[10px] font-telemetry text-[#FF5A00] uppercase tracking-widest font-bold mb-3">// FEATURE_06</div>
-                        <h4 class="text-base font-bold text-slate-900 font-structural tracking-tight mb-4">Paid from Project "Preliminaries" (OpEx over CapEx)</h4>
-                        <div class="text-xs leading-relaxed text-slate-600">
-                            By bundling the physical node, local database, and extraction software into a flat-rate monthly lease, the utility is funded directly out of local project preliminaries, bypassing corporate purchasing delays.
+                    <!-- Column 2 -->
+                    <div class="space-y-4 p-6 bg-slate-50/50 border border-slate-100 rounded-lg">
+                        <div class="h-8 w-8 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center">
+                            <svg class="h-4 w-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
                         </div>
+                        <h3 class="text-base font-bold text-slate-900">Plug-and-Play Hardware</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Deploys on your LAN as a compact, silent, hardened hardware node requiring zero active local system administration. Built-in BIOS and service-level watchdogs recover automatically from power loss with zero technical oversight.
+                        </p>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="space-y-4 p-6 bg-slate-50/50 border border-slate-100 rounded-lg">
+                        <div class="h-8 w-8 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center">
+                            <svg class="h-4 w-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900">Zero-Retention Extraction</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Operational files are uploaded securely for transient, zero-retention cloud-AI extraction. Structured environmental variables are written directly to your local database, and the raw files are immediately deleted from cloud storage.
+                        </p>
                     </div>
                 </div>
 
@@ -364,18 +341,18 @@
                 <div class="space-y-3">
                     <p class="font-semibold text-slate-900 font-telemetry uppercase tracking-wider">// SOLUTIONS</p>
                     <ul class="space-y-2">
-                        <li><a href="#solutions" class="hover:text-slate-900 transition-colors">Scope 3 Carbon Verification</a></li>
-                        <li><a href="#solutions" class="hover:text-slate-900 transition-colors">Circular Materials & VIDA</a></li>
-                        <li><a href="#solutions" class="hover:text-slate-900 transition-colors">Fuel Tax Credit Rebates</a></li>
+                        <li><a href="#solutions" class="hover:text-slate-900 transition-colors">Cold-Chain & Distribution Freight</a></li>
+                        <li><a href="#solutions" class="hover:text-slate-900 transition-colors">Civil Infrastructure & Capital Works</a></li>
+                        <li><a href="#solutions" class="hover:text-slate-900 transition-colors">Structural Steel & Metal Fabrication</a></li>
                     </ul>
                 </div>
-                <!-- Column 2: Capabilities -->
+                <!-- Column 2: Capabilities (Refactored to be future-proof and generic) -->
                 <div class="space-y-3">
                     <p class="font-semibold text-slate-900 font-telemetry uppercase tracking-wider">// CAPABILITIES</p>
                     <ul class="space-y-2">
-                        <li><a href="#haas" class="hover:text-slate-900 transition-colors">Zero-IT-Friction Setup</a></li>
-                        <li><a href="#haas" class="hover:text-slate-900 transition-colors">Private Docket Ingestion</a></li>
-                        <li><a href="#haas" class="hover:text-slate-900 transition-colors">Ruggedized On-Site Hardware</a></li>
+                        <li><a href="#data-isolation" class="hover:text-slate-900 transition-colors">On-Premises Deployment</a></li>
+                        <li><a href="#data-isolation" class="hover:text-slate-900 transition-colors">Zero-Retention Parsing</a></li>
+                        <li><a href="#how-it-works" class="hover:text-slate-900 transition-colors">Emissions Pipeline Automation</a></li>
                     </ul>
                 </div>
                 <!-- Column 3: Location -->
@@ -493,7 +470,7 @@
 
             // --- Externalized Client Portal Routing Core Logic ---
             const portalTrigger = document.getElementById('portal-trigger');
-            const portalModal = portalPortal = document.getElementById('portal-modal');
+            const portalModal = document.getElementById('portal-modal');
             const closeModalBtn = document.getElementById('close-modal');
             const portalForm = document.getElementById('portal-form');
             const portalSubmitBtn = document.getElementById('portal-submit-btn');
