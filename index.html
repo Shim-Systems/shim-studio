@@ -278,7 +278,7 @@
                         <div class="text-[10px] font-telemetry text-[#FF5A00] uppercase tracking-widest font-bold mb-3">// FEATURE_01</div>
                         <h4 class="text-base font-bold text-slate-900 font-structural tracking-tight mb-4">Bypasses the IT Gatekeeper Wall</h4>
                         <div class="text-xs leading-relaxed text-slate-600">
-                            Our physical edge appliance operates as an air-gapped, outbound-only device strictly within the local site LAN. It requires zero corporate IT integration, zero firewall exceptions, and zero network modifications to work immediately.
+                            Our physical edge appliance operates as an outbound-only device, running independently of internal corporate infrastructure via local connectivity or autonomous cellular fallbacks. It requires zero corporate IT integration, zero firewall exceptions, and zero network modifications to work immediately.
                         </div>
                     </div>
                 </div>
@@ -371,7 +371,7 @@
                 </div>
                 <!-- Column 2: Capabilities -->
                 <div class="space-y-3">
-                    <p class="font-semibold text-slate-900 font-telemetry uppercase tracking-wider">// CAPABILITIES</p>
+                    <p class="font-semibold text-[#1E2229] font-telemetry uppercase tracking-wider">// CAPABILITIES</p>
                     <ul class="space-y-2">
                         <li><a href="#haas" class="hover:text-slate-900 transition-colors">Zero-IT-Friction Setup</a></li>
                         <li><a href="#haas" class="hover:text-slate-900 transition-colors">Private Docket Ingestion</a></li>
@@ -493,7 +493,7 @@
 
             // --- Externalized Client Portal Routing Core Logic ---
             const portalTrigger = document.getElementById('portal-trigger');
-            const portalModal = document.getElementById('portal-modal');
+            const portalModal = portalPortal = document.getElementById('portal-modal');
             const closeModalBtn = document.getElementById('close-modal');
             const portalForm = document.getElementById('portal-form');
             const portalSubmitBtn = document.getElementById('portal-submit-btn');
