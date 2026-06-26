@@ -165,20 +165,15 @@
                     <div class="inline-block text-[10px] font-telemetry bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider mb-4">// THE EDGE</div>
                     <h2 id="the-edge-title" class="text-3xl font-bold tracking-tight text-slate-900 font-structural leading-tight">Navigating the physical realities of on-site compliance.</h2>
                     <p class="text-slate-500 text-sm mt-3 max-w-3xl leading-relaxed">
-                        Software-only compliance platforms fail when they hit the physical, legal, and operational gates of active industrial sites. Select each operational gate below to view its real-world compliance criteria.
+                        Software-only compliance platforms fail when they hit the physical, legal, and operational gates of active industrial sites.
                     </p>
                 </div>
 
-                <!-- Desktop View: Compact Horizontal Grid Matrix with Dynamic Linking Track -->
+                <!-- Desktop View: Compact Horizontal Grid Matrix -->
                 <div class="relative mb-6">
-                    <!-- Background link track -->
-                    <div class="absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-slate-200/60 -translate-y-1/2 z-0 hidden sm:block"></div>
-                    <!-- Active filled progress line segment -->
-                    <div id="desktop-progress-bar" class="absolute top-1/2 left-[10%] h-0.5 bg-gradient-to-r from-[#FF5A00] to-[#FF5A00]/80 -translate-y-1/2 z-0 hidden sm:block transition-all duration-300" style="width: 0%;"></div>
-
                     <div class="hidden sm:grid sm:grid-cols-5 gap-3 relative z-10">
                         <!-- Gate 1 Button -->
-                        <button onclick="setEdgeStep(1)" onmouseenter="setEdgeStep(1)" id="the-edge-tab-1" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-200 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-[#FF5A00] bg-orange-50/5 shadow-[0_0_12px_rgba(255,90,0,0.1)]">
+                        <button onclick="setEdgeStep(1)" onmouseenter="setEdgeStep(1)" id="the-edge-tab-1" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-[#FF5A00] bg-orange-50/5 shadow-[0_0_12px_rgba(255,90,0,0.1)]">
                             <div class="flex justify-between items-center w-full mb-2">
                                 <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider">GATE 01</span>
                                 <span class="step-badge h-5 w-5 rounded-full border flex items-center justify-center font-telemetry text-[9px] font-bold bg-[#FF5A00] text-white border-[#FF5A00] transition-colors duration-200">1</span>
@@ -186,7 +181,7 @@
                             <span class="text-xs font-bold text-slate-900 leading-tight font-structural">Mandatory climate standards require transaction-level auditing.</span>
                         </button>
                         <!-- Gate 2 Button -->
-                        <button onclick="setEdgeStep(2)" onmouseenter="setEdgeStep(2)" id="the-edge-tab-2" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-200 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-slate-200 bg-white">
+                        <button onclick="setEdgeStep(2)" onmouseenter="setEdgeStep(2)" id="the-edge-tab-2" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-slate-200 bg-white">
                             <div class="flex justify-between items-center w-full mb-2">
                                 <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider">GATE 02</span>
                                 <span class="step-badge h-5 w-5 rounded-full border flex items-center justify-center font-telemetry text-[9px] font-bold bg-white text-slate-400 border-slate-200 transition-colors duration-200">2</span>
@@ -194,7 +189,7 @@
                             <span class="text-xs font-bold text-slate-900 leading-tight font-structural">Gatehouse capture is required to prevent data loss.</span>
                         </button>
                         <!-- Gate 3 Button -->
-                        <button onclick="setEdgeStep(3)" onmouseenter="setEdgeStep(3)" id="the-edge-tab-3" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-200 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-slate-200 bg-white">
+                        <button onclick="setEdgeStep(3)" onmouseenter="setEdgeStep(3)" id="the-edge-tab-3" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-slate-200 bg-white">
                             <div class="flex justify-between items-center w-full mb-2">
                                 <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider">GATE 03</span>
                                 <span class="step-badge h-5 w-5 rounded-full border flex items-center justify-center font-telemetry text-[9px] font-bold bg-white text-slate-400 border-slate-200 transition-colors duration-200">3</span>
@@ -202,7 +197,7 @@
                             <span class="text-xs font-bold text-slate-900 leading-tight font-structural">Ingestion must operate offline in dead zones.</span>
                         </button>
                         <!-- Gate 4 Button -->
-                        <button onclick="setEdgeStep(4)" onmouseenter="setEdgeStep(4)" id="the-edge-tab-4" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-200 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-slate-200 bg-white">
+                        <button onclick="setEdgeStep(4)" onmouseenter="setEdgeStep(4)" id="the-edge-tab-4" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-slate-200 bg-white">
                             <div class="flex justify-between items-center w-full mb-2">
                                 <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider">GATE 04</span>
                                 <span class="step-badge h-5 w-5 rounded-full border flex items-center justify-center font-telemetry text-[9px] font-bold bg-white text-slate-400 border-slate-200 transition-colors duration-200">4</span>
@@ -210,10 +205,10 @@
                             <span class="text-xs font-bold text-slate-900 leading-tight font-structural">Phones require a local connection loop without cellular signal.</span>
                         </button>
                         <!-- Gate 5 Button -->
-                        <button onclick="setEdgeStep(5)" onmouseenter="setEdgeStep(5)" id="the-edge-tab-5" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-200 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-slate-200 bg-white">
+                        <button onclick="setEdgeStep(5)" onmouseenter="setEdgeStep(5)" id="the-edge-tab-5" class="the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)] border-slate-200 bg-white">
                             <div class="flex justify-between items-center w-full mb-2">
                                 <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider">GATE 05</span>
-                                <span class="step-badge h-5 w-5 rounded-full border flex items-center justify-center font-telemetry text-[9px] font-bold bg-white text-slate-400 border-slate-200 transition-all duration-200">5</span>
+                                <span class="step-badge h-5 w-5 rounded-full border flex items-center justify-center font-telemetry text-[9px] font-bold bg-white text-slate-400 border-slate-200 transition-all duration-300">5</span>
                             </div>
                             <span class="text-xs font-bold text-slate-900 leading-tight font-structural">On-site hardware must remain completely air-gapped.</span>
                         </button>
@@ -233,7 +228,7 @@
                         </div>
                     </button>
                     <!-- Gate 2 Mobile -->
-                    <button onclick="setEdgeStep(2)" id="the-edge-mob-2" class="the-edge-mob-btn border-2 rounded-xl p-4 text-left transition-all duration-200 focus:outline-none flex justify-between items-center border-slate-200 bg-white w-full">
+                    <button onclick="setEdgeStep(2)" id="the-edge-mob-2" class="the-edge-mob-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex justify-between items-center border-slate-200 bg-white w-full">
                         <div class="flex items-center gap-3">
                             <span class="step-num-badge h-6 w-6 rounded-full border flex items-center justify-center font-telemetry text-[10px] font-bold bg-white text-slate-400 border-slate-200 transition-colors duration-200">2</span>
                             <div class="flex flex-col">
@@ -243,34 +238,41 @@
                         </div>
                     </button>
                     <!-- Gate 3 Mobile -->
-                    <button onclick="setEdgeStep(3)" id="the-edge-mob-3" class="the-edge-mob-btn border-2 rounded-xl p-4 text-left transition-all duration-200 focus:outline-none flex justify-between items-center border-slate-200 bg-white w-full">
-                        <div class="flex flex-col">
-                            <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider mb-1">GATE 03</span>
-                            <span class="text-xs font-bold text-slate-900 leading-tight font-structural">Ingestion must operate offline in dead zones.</span>
+                    <button onclick="setEdgeStep(3)" id="the-edge-mob-3" class="the-edge-mob-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex justify-between items-center border-slate-200 bg-white w-full">
+                        <div class="flex items-center gap-3">
+                            <span class="step-num-badge h-6 w-6 rounded-full border flex items-center justify-center font-telemetry text-[10px] font-bold bg-white text-slate-400 border-slate-200 transition-colors duration-200">3</span>
+                            <div class="flex flex-col">
+                                <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider mb-0.5">GATE 03</span>
+                                <span class="text-xs font-bold text-slate-900 leading-tight font-structural">Ingestion must operate offline in dead zones.</span>
+                            </div>
                         </div>
                     </button>
                     <!-- Gate 4 Mobile -->
-                    <button onclick="setEdgeStep(4)" id="the-edge-mob-4" class="the-edge-mob-btn border-2 rounded-xl p-4 text-left transition-all duration-200 focus:outline-none flex justify-between items-center border-slate-200 bg-white w-full">
-                        <div class="flex flex-col">
-                            <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider mb-1">GATE 04</span>
-                            <span class="text-xs font-bold text-slate-900 leading-tight font-structural">Phones require a local connection loop without cellular signal.</span>
+                    <button onclick="setEdgeStep(4)" id="the-edge-mob-4" class="the-edge-mob-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex justify-between items-center border-slate-200 bg-white w-full">
+                        <div class="flex items-center gap-3">
+                            <span class="step-num-badge h-6 w-6 rounded-full border flex items-center justify-center font-telemetry text-[10px] font-bold bg-white text-slate-400 border-slate-200 transition-colors duration-200">4</span>
+                            <div class="flex flex-col">
+                                <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider mb-0.5">GATE 04</span>
+                                <span class="text-xs font-bold text-slate-900 leading-tight font-structural">Phones require a local connection loop without cellular signal.</span>
+                            </div>
                         </div>
                     </button>
                     <!-- Gate 5 Mobile -->
-                    <button onclick="setEdgeStep(5)" id="the-edge-mob-5" class="the-edge-mob-btn border-2 rounded-xl p-4 text-left transition-all duration-200 focus:outline-none flex justify-between items-center border-slate-200 bg-white w-full">
-                    <div class="flex flex-col">
-                        <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider mb-1 block">GATE 05</span>
-                        <span class="text-xs font-bold text-slate-900 leading-tight font-structural">On-site hardware must remain completely air-gapped.</span>
+                    <button onclick="setEdgeStep(5)" id="the-edge-mob-5" class="the-edge-mob-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex justify-between items-center border-slate-200 bg-white w-full">
+                    <div class="flex items-center gap-3">
+                        <span class="step-num-badge h-6 w-6 rounded-full border flex items-center justify-center font-telemetry text-[10px] font-bold bg-white text-slate-400 border-slate-200 transition-colors duration-200">5</span>
+                        <div class="flex flex-col">
+                            <span class="font-telemetry text-[9px] font-bold text-slate-400 tracking-wider mb-0.5">GATE 05</span>
+                            <span class="text-xs font-bold text-slate-900 leading-tight font-structural">On-site hardware must remain completely air-gapped.</span>
+                        </div>
                     </div>
                 </button>
             </div>
 
             <!-- Unified Shared Interactive Detail Box (Minimizes scrolling completely) -->
-            <div class="bg-[#0F1115] text-white p-6 rounded-xl border border-slate-800 shadow-2xl relative min-h-[160px] flex flex-col justify-center transition-all duration-300">
-                <div id="the-edge-detail-container" class="space-y-3 transition-opacity duration-150 opacity-100">
-                    <div id="the-edge-detail-tag" class="inline-block text-[10px] font-telemetry bg-slate-800 text-slate-400 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">Gate 1: The Auditor Test (Verifying the Transaction)</div>
-                    <h3 id="the-edge-detail-title" class="text-lg font-bold text-white font-structural mt-2">Mandatory climate standards require transaction-level auditing.</h3>
-                    <p id="the-edge-detail-desc" class="text-xs text-slate-400 leading-relaxed max-w-3xl mt-2">
+            <div class="bg-[#0F1115] text-white p-6 rounded-xl border border-slate-800 shadow-2xl relative min-h-[120px] flex flex-col justify-center transition-all duration-300">
+                <div id="the-edge-detail-container" class="transition-opacity duration-150 opacity-100">
+                    <p id="the-edge-detail-desc" class="text-xs text-slate-400 leading-relaxed max-w-3xl">
                         Under AASB S2, carbon accounting carries the same legal weight as financial reporting. Just as financial audits reject guessed budgets, carbon audits legally require transaction-level data verified back to physical delivery dockets as unalterable "carbon transaction receipts."
                     </p>
                 </div>
@@ -284,10 +286,10 @@
                     
                     <!-- Left Panel: Clear Core Pitch -->
                     <div class="lg:col-span-5 space-y-6">
-                        <div class="inline-block text-[10px] font-telemetry bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">// ON-PREMISES DEPLOYMENT</div>
+                        <div class="inline-block text-[10px] font-telemetry bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">// DEPLOYMENT</div>
                         <h2 class="text-3xl font-bold tracking-tight text-slate-900 font-structural leading-tight">Hardware-as-a-Service<br>(HaaS) Deployment.</h2>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            True value-chain compliance demands a dedicated physical on-site checkpoint. We deliver the SHIM as a fully managed, turn-key hardware subscription—eliminating capital expenditure hurdles and ongoing support overheads.
+                            True value-chain compliance demands a dedicated physical on-site checkpoint. We deliver the SHIM as a fully managed, turn-key on-premises hardware subscription—eliminating capital expenditure hurdles and ongoing support overheads.
                         </p>
                         <p class="text-slate-500 text-xs leading-relaxed">
                             Funded directly out of local project preliminaries (OpEx), our flat-rate monthly lease bundles the physical node, local SQLite transaction databases, and automated extraction software into a simple project utility.
@@ -337,39 +339,11 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200/50 pt-16 pb-12 text-xs text-slate-500">
+    <footer class="bg-white border-t border-slate-200/50 py-12 text-xs text-slate-500">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 border-b border-slate-100">
-                <!-- Column 1: Solutions -->
-                <div class="space-y-3">
-                    <p class="font-semibold text-slate-900 font-telemetry uppercase tracking-wider">// SOLUTIONS</p>
-                    <ul class="space-y-2">
-                        <li><a href="#solutions" class="hover:text-slate-900 transition-colors">Scope 3 Carbon Ledger</a></li>
-                        <li><a href="#solutions" class="hover:text-slate-900 transition-colors">Circular Materials & VIDA</a></li>
-                    </ul>
-                </div>
-                <!-- Column 2: Capabilities -->
-                <div class="space-y-3">
-                    <p class="font-semibold text-[#1E2229] font-telemetry uppercase tracking-wider">// CAPABILITIES</p>
-                    <ul class="space-y-2">
-                        <li><a href="#deployment" class="hover:text-slate-900 transition-colors">On-Premises Deployment</a></li>
-                        <li><a href="#the-edge" class="hover:text-slate-900 transition-colors">Zero-Retention Parsing</a></li>
-                        <li><a href="#solutions" class="hover:text-slate-900 transition-colors">Private Docket Ingestion</a></li>
-                    </ul>
-                </div>
-                <!-- Column 3: Location -->
-                <div class="space-y-3">
-                    <p class="font-semibold text-slate-900 font-telemetry uppercase tracking-wider">// REGISTRY</p>
-                    <p class="leading-relaxed text-slate-400">
-                        SHIM SYSTEMS<br>
-                        Melbourne, VIC
-                    </p>
-                </div>
-            </div>
-            
-            <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400">
                 <div class="flex items-center space-x-3">
-                    <span class="font-bold text-slate-900 tracking-wider">SHIM</span>
+                    <span class="font-bold text-slate-900 tracking-wider font-structural">SHIM</span>
                     <span>© 2026 SHIM SYSTEMS. All rights reserved.</span>
                 </div>
                 <!-- Subtle, premium client portal trigger mimicking a highly secure, private middleware deployment -->
@@ -438,68 +412,97 @@
         // HaaS Matrix Data Dictionary (Matches YES-Ladder spec perfectly)
         const checkpointSteps = {
             1: {
-                tag: "Gate 1: The Auditor Test (Verifying the Transaction)",
-                title: "Mandatory climate standards require transaction-level auditing.",
-                desc: "Under AASB S2, carbon accounting carries the same legal weight as financial reporting. Just as financial audits reject estimated budgets, carbon audits legally require transaction-level data verified back to physical delivery dockets as unalterable 'carbon transaction receipts.'"
+                desc: "Under AASB S2, carbon accounting carries the same legal weight as financial reporting. Just as financial audits reject guessed budgets, carbon audits legally require transaction-level data verified back to physical delivery dockets as unalterable 'carbon transaction receipts.'"
             },
             2: {
-                tag: "Gate 2: The On-Site Reality (Capturing Transactions at the Source)",
-                title: "Gatehouse capture is required to prevent data loss.",
                 desc: "Retrospective paper processing violates the core principles of transactional audit integrity. Physical tickets are lost (the 15% leakage factor) and exposed paper is ruined by rain, mud, or grease. Real-time capture at the Point of Delivery securing the carbon transaction receipt inside the dry cab resolves invoice disputes on Day-Zero before the materials are poured and buried."
             },
             3: {
-                tag: "Gate 3: The Environment (Signal Dead Zones)",
-                title: "Ingestion must operate offline in dead zones.",
                 desc: "Active gates are typical offline network dead zones powered by unstable generator grids prone to surges. Standard mobile apps fail when cellular signals drop out. The SHIM appliance acts as an always-on local general ledger to persist data fully disconnected."
             },
             4: {
-                tag: "Gate 4: The Network Hook (Local Connection Bubble)",
-                title: "Phones require a local connection loop without cellular signal.",
                 desc: "With zero coverage, external servers are unreachable. The SHIM appliance generates its own local gatehouse Wi-Fi bubble. Subcontractor drivers scan the weatherproof QR code placard to connect their phone to the local network ('SHIM_Gate_01') and instantly open http://shim.local with zero external network dependencies."
             },
             5: {
-                tag: "Gate 5: Corporate IT (The Security Block)",
-                title: "On-site hardware must remain completely air-gapped.",
                 desc: "Enterprise IT compliance departments reject external hardware requesting router access or open inbound ports. To maintain an absolute air-gap, the SHIM hardware node is completely isolated from local corporate networks, relying exclusively on its own outbound-only cellular modem to transmit nightly transaction updates."
             }
         };
 
         // Interactive Checkpoint Step switcher
         function setEdgeStep(stepNum) {
-            // Update Desktop buttons
+            // Update Desktop Buttons
             const desktopTabs = document.querySelectorAll('.the-edge-tab-btn');
             desktopTabs.forEach((tab, index) => {
-                if (index + 1 === stepNum) {
-                    tab.classList.remove('border-slate-200', 'bg-white');
-                    tab.classList.add('border-[#FF5A00]', 'bg-orange-500/5', 'shadow-[0_0_12px_rgba(255,90,0,0.1)]');
+                const currentStep = index + 1;
+                const badge = tab.querySelector('.step-badge');
+                
+                // Clear any state styling first
+                tab.className = "the-edge-tab-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex flex-col justify-between h-32 cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.02)]";
+                badge.className = "step-badge h-5 w-5 rounded-full border flex items-center justify-center font-telemetry text-[9px] font-bold transition-all duration-300";
+
+                if (currentStep === stepNum) {
+                    // CURRENT/ACTIVE TERMINAL NODE
+                    tab.classList.add('border-[#FF5A00]', 'bg-orange-50/5', 'shadow-[0_0_12px_rgba(255,90,0,0.1)]', 'scale-[1.02]', 'opacity-100', 'z-10');
+                    badge.classList.add('bg-[#FF5A00]', 'text-white', 'border-[#FF5A00]');
+                    badge.innerText = currentStep;
+                } else if (currentStep < stepNum) {
+                    // CUMULATIVE COMPLETED/PASSED STEP
+                    tab.classList.add('border-[#FF5A00]/40', 'bg-orange-50/2', 'opacity-90', 'scale-100');
+                    badge.classList.add('bg-emerald-600', 'text-white', 'border-emerald-600');
+                    badge.innerText = "✓";
                 } else {
-                    tab.classList.remove('border-[#FF5A00]', 'bg-orange-500/5', 'shadow-[0_0_12px_rgba(255,90,0,0.1)]');
-                    tab.classList.add('border-slate-200', 'bg-white');
+                    // INACTIVE/PENDING STEP
+                    tab.classList.add('border-slate-200', 'bg-white', 'opacity-40', 'scale-100');
+                    badge.classList.add('bg-white', 'text-slate-400', 'border-slate-200');
+                    badge.innerText = currentStep;
                 }
             });
 
-            // Update Mobile buttons
+            // Update Mobile Buttons
             const mobileBtns = document.querySelectorAll('.the-edge-mob-btn');
             mobileBtns.forEach((btn, index) => {
-                if (index + 1 === stepNum) {
-                    btn.classList.remove('border-slate-200', 'bg-white');
-                    btn.classList.add('border-[#FF5A00]', 'bg-orange-50/5');
+                const currentStep = index + 1;
+                const badge = btn.querySelector('.step-num-badge');
+                
+                // Clear state styling first
+                btn.className = "the-edge-mob-btn border-2 rounded-xl p-4 text-left transition-all duration-300 focus:outline-none flex justify-between items-center w-full";
+                if (badge) {
+                    badge.className = "step-num-badge h-6 w-6 rounded-full border flex items-center justify-center font-telemetry text-[10px] font-bold transition-all duration-300";
+                }
+
+                if (currentStep === stepNum) {
+                    // ACTIVE MOBILE ROW
+                    btn.classList.add('border-[#FF5A00]', 'bg-orange-50/5', 'opacity-100');
+                    if (badge) {
+                        badge.classList.add('bg-[#FF5A00]', 'text-white', 'border-[#FF5A00]');
+                        badge.innerText = currentStep;
+                    }
+                } else if (currentStep < stepNum) {
+                    // PASSED MOBILE ROW
+                    btn.classList.add('border-[#FF5A00]/30', 'bg-orange-50/2', 'opacity-80');
+                    if (badge) {
+                        badge.classList.add('bg-emerald-600', 'text-white', 'border-emerald-600');
+                        badge.innerText = "✓";
+                    }
                 } else {
-                    btn.classList.remove('the-edge-mob-btn', 'bg-white'); // Fix active border transition on select
-                    btn.classList.add('border-slate-200', 'bg-white');
+                    // PENDING MOBILE ROW
+                    btn.classList.add('border-slate-200', 'bg-white', 'opacity-40');
+                    if (badge) {
+                        badge.classList.add('bg-white', 'text-slate-400', 'border-slate-200');
+                        badge.innerText = currentStep;
+                    }
                 }
             });
 
             // Smooth content fade transitions in the shared display card
             const container = document.getElementById('the-edge-detail-container');
-            container.style.opacity = 0;
-
-            setTimeout(() => {
-                document.getElementById('the-edge-detail-tag').innerText = checkpointSteps[stepNum].tag;
-                document.getElementById('the-edge-detail-title').innerText = checkpointSteps[stepNum].title;
-                document.getElementById('the-edge-detail-desc').innerText = checkpointSteps[stepNum].desc;
-                container.style.opacity = 1;
-            }, 150);
+            if (container) {
+                container.style.opacity = 0;
+                setTimeout(() => {
+                    document.getElementById('the-edge-detail-desc').innerText = checkpointSteps[stepNum].desc;
+                    container.style.opacity = 1;
+                }, 150);
+            }
         }
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -539,7 +542,7 @@
 
             // --- Externalized Client Portal Routing Core Logic ---
             const portalTrigger = document.getElementById('portal-trigger');
-            const portalModal = portalPortal = document.getElementById('portal-modal');
+            const portalModal = document.getElementById('portal-modal');
             const closeModalBtn = document.getElementById('close-modal');
             const portalForm = document.getElementById('portal-form');
             const portalSubmitBtn = document.getElementById('portal-submit-btn');
