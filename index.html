@@ -229,7 +229,7 @@
                 <div class="bg-[#161920] p-6 rounded-xl border border-slate-800 shadow-2xl relative min-h-[140px] flex flex-col justify-center transition-all duration-300">
                     <div id="the-edge-detail-container" class="space-y-3 transition-opacity duration-150 opacity-100">
                         <p id="the-edge-detail-desc" class="text-sm text-slate-300 leading-relaxed max-w-3xl">
-                            Environmental audits reject loose guesses and high-level spend estimates. Because carbon metrics carry strict director liability—exposing executives to personal fines up to $751,200—your log must be built out of unalterable physical receipts from the point of delivery.
+                            Environmental audits reject loose guesses and high-level spend estimates. Because carbon metrics carry strict director liability—exposing executives to personal fines up to $751,200—your log must be built directly out of unalterable physical receipts from the point of delivery.
                         </p>
                     </div>
                 </div>
@@ -323,56 +323,9 @@
                     <span class="font-bold text-slate-900 tracking-wider font-structural">SHIM</span>
                     <span>© 2026 SHIM SYSTEMS. All rights reserved.</span>
                 </div>
-                <a href="#" id="portal-trigger" class="hover:text-slate-900 transition-colors flex items-center gap-1.5 text-xs text-slate-400">
-                    <span class="h-1.5 w-1.5 rounded-full bg-slate-300"></span>
-                    Gateway Node Status ↗
-                </a>
             </div>
         </div>
     </footer>
-
-    <div id="portal-modal" class="hidden fixed inset-0 bg-slate-950/40 backdrop-blur-sm z-50 items-center justify-center p-4">
-        <div class="bg-white border border-slate-200/90 shadow-2xl max-w-sm w-full p-8 rounded-lg relative text-center">
-            
-            <button id="close-modal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 transition-colors p-1" aria-label="Dismiss Modal">
-                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-
-            <div class="flex flex-col items-center select-none pt-2 mb-6">
-                <div class="flex justify-between text-xl font-structural font-black text-[#1A1D20] leading-none tracking-normal w-[56px]">
-                    <span>S</span><span>H</span><span>I</span><span>M</span>
-                </div>
-                <div class="w-[56px] mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 25 160 30" class="w-full h-auto" fill="none">
-                        <path d="M 20 25 H 89 L 79 55 H 20 Z" fill="currentColor" />
-                        <path d="M 97 25 L 113 25 L 103 55 L 87 55 Z" fill="#FF5A00" />
-                        <path d="M 121 25 L 111 55 H 180 V 25 Z" fill="currentColor" />
-                    </svg>
-                </div>
-            </div>
-
-            <h3 class="text-lg font-bold text-[#1A1D20] tracking-tight font-structural">Secure Local Node Login</h3>
-
-            <form id="portal-form" class="mt-6 space-y-4 text-left">
-                <div>
-                    <label for="gateway-key" class="block text-[10px] font-telemetry uppercase tracking-wider text-slate-400 font-bold mb-1.5">Gateway Access Token</label>
-                    <input type="password" id="gateway-key" required placeholder="••••••••••••" class="w-full border border-slate-200 bg-slate-50/50 rounded-[4px] px-3.5 py-2.5 text-sm font-telemetry focus:outline-none focus:border-slate-800 transition-colors">
-                </div>
-                
-                <button type="submit" id="portal-submit-btn" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm py-2.5 px-4 rounded-[4px] transition-colors flex items-center justify-center gap-2 font-structural">
-                    Authorize Session
-                </button>
-
-                <div id="portal-error" class="hidden mt-4 p-3 bg-red-50/80 border border-red-200/60 rounded text-[11px] font-telemetry text-red-700 leading-relaxed">
-                    <span class="font-bold block uppercase tracking-wider text-red-800 mb-1">! ACCESS DENIED</span>
-                    Connection must originate from a verified terminal gateway node located physically inside the site boundary.
-                </div>
-            </form>
-
-        </div>
-    </div>
 
     <script>
         // Non-jargon site parameters mapping
@@ -502,54 +455,6 @@
                     mobileMenu.classList.add('hidden');
                     menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
                 });
-            });
-
-            const portalTrigger = document.getElementById('portal-trigger');
-            const portalModal = document.getElementById('portal-modal');
-            const closeModalBtn = document.getElementById('close-modal');
-            const portalForm = document.getElementById('portal-form');
-            const portalSubmitBtn = document.getElementById('portal-submit-btn');
-            const portalError = document.getElementById('portal-error');
-            const gatewayInput = document.getElementById('gateway-key');
-
-            portalTrigger.addEventListener('click', (e) => {
-                e.preventDefault();
-                portalModal.classList.remove('hidden');
-                portalModal.classList.add('flex');
-                gatewayInput.focus();
-            });
-
-            const hidePortalModal = () => {
-                portalModal.classList.add('hidden');
-                portalModal.classList.remove('flex');
-                portalError.classList.add('hidden');
-                portalForm.reset();
-                portalSubmitBtn.disabled = false;
-                portalSubmitBtn.innerHTML = 'Authorize Session';
-            };
-
-            closeModalBtn.addEventListener('click', hidePortalModal);
-            portalModal.addEventListener('click', (e) => { if (e.target === portalModal) hidePortalModal(); });
-
-            portalForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                portalSubmitBtn.disabled = true;
-                portalError.classList.add('hidden');
-                
-                portalSubmitBtn.innerHTML = `
-                    <svg class="animate-spin h-4 w-4 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    <span class="ml-2 font-telemetry text-xs tracking-wider">CONNECTING NODE...</span>
-                `;
-
-                setTimeout(() => {
-                    portalSubmitBtn.disabled = false;
-                    portalSubmitBtn.innerHTML = 'Authorize Session';
-                    portalError.classList.remove('hidden');
-                    gatewayInput.focus();
-                }, 1300);
             });
         });
     </script>
