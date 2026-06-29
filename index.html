@@ -106,13 +106,13 @@
                         <h3 class="text-base font-bold text-slate-900 font-structural">04 // EFFICIENCY</h3>
                         <h4 class="text-sm font-semibold text-slate-700">Eliminate Admin Overhead</h4>
                         <p class="text-slate-600 text-xs leading-relaxed">
-                            Chasing lost tickets and manually typing dockets into spreadsheets drains massive amounts of team labor every week. SHIM automates this by moving capture to the vehicle window. </p>
+                            Chasing lost tickets and manually typing dockets into spreadsheets drains massive amounts of team labor every week. SHIM automates this by handling ingestion directly at the gatehouse perimeter. </p>
                     </div>
                     <div class="space-y-2">
                         <h3 class="text-base font-bold text-slate-900 font-structural">05 // RECEIVABLES</h3>
-                        <h4 class="text-sm font-semibold text-slate-700">Instant Material Checks</h4>
+                        <h4 class="text-sm font-semibold text-slate-700">Shift-End Delivery Matching</h4>
                         <p class="text-slate-600 text-xs leading-relaxed">
-                            Perishable material mixes require quick verification. SHIM enables immediate gatehouse checks to catch material discrepancies before integration occurs. </p>
+                            Collecting physical dockets at the gate perimeter prevents unvouched materials from slipping through. SHIM secures physical proofs locally, allowing rapid end-of-shift reconciliation to catch supplier billing errors early. </p>
                     </div>
                     <div class="space-y-2">
                         <h3 class="text-base font-bold text-slate-900 font-structural">06 // VERIFICATION</h3>
@@ -130,10 +130,10 @@
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                     
                     <div class="lg:col-span-5 space-y-4">
-                        <span class="text-[10px] font-telemetry bg-slate-800 text-slate-400 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider block w-max">// UNIFIED INGESTION FRAMEWORK</span>
-                        <h2 class="text-3xl font-bold font-structural tracking-tight leading-tight">The Site-Gate Data Pipeline</h2>
+                        <span class="text-[10px] font-telemetry bg-slate-800 text-slate-400 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider block w-max">// PERIMETER PIPELINE</span>
+                        <h2 class="text-3xl font-bold font-structural tracking-tight leading-tight">Unified Ingestion Framework</h2>
                         <p class="text-slate-400 text-sm leading-relaxed">
-                            SHIM unifies site-boundary capture by routing both physical dockets and digital records through a single, secure edge terminal. By operating as a self-contained digital island, it secures audit-ready records right at the point of delivery while completely bypassing corporate IT network reviews.
+                            To maintain absolute data integrity without disrupting high-volume site logistics, SHIM unifies both physical paper dockets and native digital records through a single, secure desktop edge appliance. This self-contained gatehouse pipeline captures, hashes, and prepares compliance records completely locally.
                         </p>
                     </div>
 
@@ -141,25 +141,25 @@
                         
                         <div class="space-y-1.5">
                             <span class="font-telemetry text-[11px] text-[#FF5A00] uppercase font-bold tracking-wider">Phase 01 // Physical Paper</span>
-                            <h4 class="text-sm font-bold font-structural text-white">Driver "Tap-and-Snap"</h4>
+                            <h4 class="text-sm font-bold font-structural text-white">Clerk Point-and-Shoot Batching</h4>
                             <p class="text-slate-400 text-xs leading-relaxed">
-                                Paper tickets use a rapid, friction-free workflow right at the cab window. Drivers scan a QR code to link to a secure, private local Wi-Fi loop, snapping a photo that updates clerk dashboards instantly with zero public internet reliance.
+                                Drivers drop paper slips into a secure receipt box at the gatehouse window and exit instantly, avoiding truck idle time or gate congestion. During natural lulls, the gate clerk clears the box using a dedicated, site-issued mobile terminal. Fitted with an optimized optical system to handle harsh outdoor lighting and thermal paper glare, the system automatically optimizes and captures the document image, streaming it securely to the local gateway over an isolated network loop.
                             </p>
                         </div>
 
                         <div class="space-y-1.5">
                             <span class="font-telemetry text-[11px] text-[#FF5A00] uppercase font-bold tracking-wider">Phase 02 // Native Digital</span>
-                            <h4 class="text-sm font-bold font-structural text-white">Office Hot-Folder Extraction</h4>
+                            <h4 class="text-sm font-bold font-structural text-white">Mapped Local Hot-Folder Ingestion</h4>
                             <p class="text-slate-400 text-xs leading-relaxed">
-                                Supplier-emailed PDFs drop straight into a monitored hot-folder. The system automatically processes the files, extracting layout data and applying strict deduplication filters behind the scenes to completely eliminate double-counting.
+                                For vendor-emailed PDFs, spreadsheets, or electronic delivery sheets, local office computers route incoming documents straight to a monitored network watch-folder on the gateway. The edge engine processes files instantly and generates a unique cryptographic hash to freeze data integrity at the custody boundary. Intelligent validation overlays automatically identify and flag repeat receipts to protect reporting ledgers from double-counting.
                             </p>
                         </div>
 
                         <div class="space-y-1.5">
                             <span class="font-telemetry text-[11px] text-[#FF5A00] uppercase font-bold tracking-wider">Phase 03 // Edge Infrastructure</span>
-                            <h4 class="text-sm font-bold font-structural text-white">Air-Gapped Terminal Security</h4>
+                            <h4 class="text-sm font-bold font-structural text-white">Generator-Hardened Security</h4>
                             <p class="text-slate-400 text-xs leading-relaxed">
-                                The entire operation runs on a fully disconnected, air-gapped terminal. Built-in transaction storage logs entries locally, while industrial power conditioning safeguards the pipeline against unpredictable electrical surges from temporary site generators.
+                                The entire workflow runs on a rugged hardware terminal that operates completely independently of external cloud networks. Built-in industrial power conditioning—pairing advanced voltage regulation with an internal uninterruptible power supply array—protects the active local database from the severe voltage transients and brownouts common to temporary site diesel generators, ensuring absolute data preservation across every shift.
                             </p>
                         </div>
 
