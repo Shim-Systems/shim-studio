@@ -3,229 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIM | The Site-Gate Ledger</title>
-    <link class="favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path d=%22M18 4h6L14 28H8z%22 fill=%22%23FF5A00%22/></svg>">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Shim Systems | Private AI Infrastructure &amp; Technical Implementation</title>
+    <!-- Tailwind CSS for modern utility styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap');
-        
-        .font-structural { font-family: 'Space Grotesk', sans-serif; }
-        .font-body { font-family: 'Inter', sans-serif; line-height: 1.6; }
-        .font-telemetry { font-family: 'JetBrains Mono', monospace; }
-        
-        ::selection { background-color: #FF5A00; color: #FFFFFF; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#07080c',
+                        slate: {
+                            950: '#0b0d16',
+                            900: '#111424',
+                            800: '#1a1e36',
+                            700: '#252b4d',
+                        },
+                        emerald: {
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-[#FAFBFB] text-[#1E2229] font-body antialiased min-h-screen flex flex-col justify-between relative">
+<body class="bg-obsidian text-slate-100 min-h-screen selection:bg-emerald-500 selection:text-obsidian">
 
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-200/50 sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between relative">
-            
-            <div class="flex flex-col select-none pt-1 w-[76px] transition-opacity hover:opacity-90">
-                <div class="flex justify-between text-2xl font-structural font-black text-[#1A1D20] leading-none tracking-normal w-[76px]">
-                    <span>S</span><span>H</span><span>I</span><span>M</span>
-                </div>
-                <div class="w-full mt-1 shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 25 160 30" class="w-full h-auto" fill="none">
-                        <path d="M 20 25 H 89 L 79 55 H 20 Z" fill="currentColor" />
-                        <path d="M 97 25 L 113 25 L 103 55 L 87 55 Z" fill="#FF5A00" />
-                        <path d="M 121 25 L 111 55 H 180 V 25 Z" fill="currentColor" />
-                    </svg>
+    <!-- Subtle Background Ambient Glows -->
+    <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-[800px] right-1/4 w-[600px] h-[600px] bg-emerald-500/3 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <!-- Header / Navigation -->
+    <header class="border-b border-slate-900/80 backdrop-blur-md sticky top-0 z-40 bg-obsidian/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <!-- Systems Logo Icon -->
+                <svg class="w-8 h-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 009 11.571V9a4 4 0 00-8 0v2.571c0 1.13.188 2.212.53 3.226L1.58 18.02a1.5 1.5 0 001.373 1.03h5.902a1.5 1.5 0 001.074-.45l1.074-1.074M3 8h1.517M13.5 3.524A10.027 10.027 0 0122 12.5v1.5a1.5 1.5 0 01-3 0v-1.5a7 7 0 00-11-5.69m9 1.19a3 3 0 10-5.998-.22" />
+                </svg>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-wider text-white">SHIM SYSTEMS</span>
+                    <span class="text-[9px] font-bold tracking-[0.25em] text-emerald-400/80 uppercase">Private AI Delivery</span>
                 </div>
             </div>
-
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
-                <a href="#why-it-matters" class="text-slate-600 hover:text-slate-900 transition-colors">Why It Matters</a>
-                <a href="#how-it-works" class="text-slate-600 hover:text-slate-900 transition-colors">How It Works</a>
-                <a href="#contact" class="hidden sm:inline-flex bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold py-2.5 px-4 rounded-[4px] transition-all hover:shadow-sm">
-                    Talk to an Expert
-                </a>
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <a href="#approach" class="hover:text-white transition">Delivery Model</a>
+                <a href="#frameworks" class="hover:text-white transition">Capabilities</a>
             </nav>
-
-            <button id="mobile-menu-btn" class="block md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none" aria-label="Toggle Menu">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-slate-200/80 px-6 py-6 flex flex-col space-y-4 shadow-lg z-40 transition-all duration-300">
-            <a href="#why-it-matters" class="mobile-nav-link text-slate-600 hover:text-slate-900 text-base font-medium py-1">Why It Matters</a>
-            <a href="#how-it-works" class="mobile-nav-link text-slate-600 hover:text-slate-900 text-base font-medium py-1">How It Works</a>
-            <a href="#contact" class="mobile-nav-link block text-center bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold py-3 px-4 rounded-[4px] mt-2">
-                Talk to an Expert
-            </a>
+            <div class="text-xs font-mono font-bold tracking-widest text-slate-500">
+                SHIMSYS.COM
+            </div>
         </div>
     </header>
 
-    <main class="flex-grow">
-        
-        <section class="max-w-5xl mx-auto px-6 pt-16 md:pt-24 pb-12 text-center space-y-6">
-            <h1 class="text-4xl md:text-6xl font-bold text-[#111317] font-structural tracking-tight max-w-4xl mx-auto leading-tight md:leading-[1.12]">
-                Audit-ready site data.<br>
-                Straight from the gate.
-            </h1>
-            
-            <p class="text-slate-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                Corporate compliance and tax audits demand unalterable delivery transactions, not estimates. SHIM secures this data right at the source with an offline, air-gapped desktop edge appliance. </p>
-
-            <div class="pt-4">
-                <a href="#how-it-works" class="inline-block bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold py-3 px-6 rounded-[4px] transition-all">
-                    See How It Works
-                </a>
-            </div>
-        </section>
-
-        <section id="why-it-matters" class="bg-white border-y border-slate-200/50 py-20 w-full">
-            <div class="max-w-5xl mx-auto px-6">
-                <div class="mb-12 space-y-2">
-                    <span class="text-[10px] font-telemetry bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">// OPERATIONAL SCENARIOS</span>
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 font-structural tracking-tight">Why Site-Boundary Capture Matters</h2>
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-4xl">
+                <!-- Micro Tag -->
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-slate-900 border border-slate-800 text-slate-400 text-xs font-mono mb-8">
+                    <span class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></span>
+                    <span>ON-PREMISES TECHNICAL DELIVERY ENGINE</span>
                 </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-10 border-t border-slate-100 pt-8">
-                    <div class="space-y-2">
-                        <h3 class="text-base font-bold text-slate-900 font-structural">01 // CARBON LOGGING</h3>
-                        <h4 class="text-sm font-semibold text-slate-700">ASRS Emissions Tracking</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Modern compliance standards under the ASRS reporting framework favor clear field data over high-level spend tracking. SHIM logs actual delivery volumes directly to replace unstable end-of-month projections. </p>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-base font-bold text-slate-900 font-structural">02 // PUBLIC SECTOR</h3>
-                        <h4 class="text-sm font-semibold text-slate-700">VIDA & ecologiQ Reporting</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Major civil contracts mandate precise tracking of recycled content. SHIM aggregates the physical material weights required under the Recycled First Policy reporting frameworks directly at the site boundary. </p>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-base font-bold text-slate-900 font-structural">03 // REBATES</h3>
-                        <h4 class="text-sm font-semibold text-slate-700">Fuel Tax Credits</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Claiming off-road Fuel Tax Credits reliably requires dependable logs. SHIM tracks fuel drops immediately to protect your records from missing paperwork. </p>
-                    </div>
-                    
-                    <div class="space-y-2">
-                        <h3 class="text-base font-bold text-slate-900 font-structural">04 // LABOR AUTOMATION</h3>
-                        <h4 class="text-sm font-semibold text-slate-700">Eradicate Data Entry</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Chasing lost tickets stalls project administration. SHIM automatically digitizes dockets at receipt, turning repetitive manual entry into instant digital records.
-                        </p>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-base font-bold text-slate-900 font-structural">05 // RECONCILIATION</h3>
-                        <h4 class="text-sm font-semibold text-slate-700">Plug Material Cost Leakage</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Unvouched materials distort inventory assets. SHIM secures physical proofs locally for rapid shift-end matching, catching billing errors before invoicing.
-                        </p>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-base font-bold text-slate-900 font-structural">06 // TRUST</h3>
-                        <h4 class="text-sm font-semibold text-slate-700">Proven Chain of Custody</h4>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Loose paperwork invites phantom delivery disputes. Operating as a fixed edge appliance, SHIM geographically anchors data to prove shipments crossed your boundary.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="how-it-works" class="bg-[#0F1115] text-white py-24 w-full border-b border-slate-900">
-            <div class="max-w-5xl mx-auto px-6">
                 
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                    
-                    <div class="lg:col-span-5 space-y-4">
-                        <span class="text-[10px] font-telemetry bg-slate-800 text-slate-400 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider block w-max">// PERIMETER PIPELINE</span>
-                        <h2 class="text-3xl font-bold font-structural tracking-tight leading-tight">Unified Ingestion Framework</h2>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            SHIM routes paper dockets and digital records through a single desktop edge appliance. This self-contained gatehouse pipeline captures, hashes, and stores compliance data completely locally—without cloud reliance or corporate network exposure.
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-none mb-8">
+                    Private Data Security. <br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Secure Local Pipelines.</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-slate-400 font-light leading-relaxed max-w-3xl">
+                    Deploying secure, local document assistants, private search tools, and automated check-lists directly behind your corporate firewall. Shim Systems is the technical implementation partner built to set up safe, private office systems running on your own physical equipment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unified Approach: Strategy vs Delivery Section -->
+    <section id="approach" class="py-24 border-t border-slate-900 bg-slate-950/20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="max-w-3xl mb-16">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-emerald-400 uppercase mb-4">Technical Framework</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+                    Hardened Implementation, Completely Localized.
+                </h3>
+                <div class="h-1 w-20 bg-emerald-500 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Architecture Box -->
+                <div class="p-8 rounded bg-slate-950/80 border border-slate-900 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-6">
+                            <span class="px-2.5 py-1 rounded bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-mono font-bold uppercase">SYSTEM INTEGRATION</span>
+                            <h4 class="text-xl font-extrabold text-white tracking-tight">Secure Folder Connections</h4>
+                        </div>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed mb-8">
+                            We connect our private document tools directly to your secure folder networks. By mapping automated directory scanning, private server syncing, and safe search indexes, we ensure that incoming compliance checklists, site inspection files, or planning applications are parsed and read instantly without leaving your network.
+                        </p>
+                        <ul class="space-y-3 border-t border-slate-900 pt-6">
+                            <li class="flex items-start text-xs font-medium text-slate-300">
+                                <svg class="w-4 h-4 text-emerald-400 mr-2.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4"/></svg>
+                                Automatic Folder Scanning &amp; New Document Reading
+                            </li>
+                            <li class="flex items-start text-xs font-medium text-slate-300">
+                                <svg class="w-4 h-4 text-emerald-400 mr-2.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4"/></svg>
+                                Secure Private Cloud Sync (Nextcloud Integrations)
+                            </li>
+                            <li class="flex items-start text-xs font-medium text-slate-300">
+                                <svg class="w-4 h-4 text-emerald-400 mr-2.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4"/></svg>
+                                Smart Local Search &amp; Private Information Sorting
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Run-times Box -->
+                <div class="p-8 rounded bg-slate-950/80 border border-slate-900 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-6">
+                            <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase">COMPUTE INFRASTRUCTURE</span>
+                            <h4 class="text-xl font-extrabold text-white tracking-tight">Dedicated Local Processing</h4>
+                        </div>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed mb-8">
+                            We set up secure document programs to run directly on your own computers, laptops, or secure office server pools. By keeping all computing completely local, your staff can scan files and look up details in seconds with zero internet lag or external risk.
+                        </p>
+                        <ul class="space-y-3 border-t border-slate-900 pt-6">
+                            <li class="flex items-start text-xs font-medium text-slate-300">
+                                <svg class="w-4 h-4 text-emerald-400 mr-2.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4"/></svg>
+                                Hardened Local Workstation Setup
+                            </li>
+                            <li class="flex items-start text-xs font-medium text-slate-300">
+                                <svg class="w-4 h-4 text-emerald-400 mr-2.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4"/></svg>
+                                Fast GPU-Powered Local Processing
+                            </li>
+                            <li class="flex items-start text-xs font-medium text-slate-300">
+                                <svg class="w-4 h-4 text-emerald-400 mr-2.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4"/></svg>
+                                Isolated Data Folders per Department
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Showcases -->
+    <section id="frameworks" class="py-24 relative overflow-hidden border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-emerald-400 uppercase mb-4">Implementation Capabilities</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Active Delivery Frameworks</h3>
+                <div class="h-1 w-20 bg-emerald-500 rounded mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Framework 1 -->
+                <div class="rounded bg-slate-950/80 border border-slate-900 p-8 flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono text-emerald-400 font-bold block mb-4">FRAMEWORK 01</span>
+                        <h4 class="text-xl font-bold text-white tracking-tight mb-4">Automatic Document Reading &amp; Organizing</h4>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">
+                            Ingests and automatically organizes messy, multi-page PDFs (such as subcontractor checklists, school compliance sheets, or council planning files). The system securely extracts key details and indexes them into clean summaries on your own local drive.
                         </p>
                     </div>
+                </div>
 
-                    <div class="lg:col-span-7 space-y-8 border-l border-slate-800 pl-4 md:pl-8">
-                        
-                        <div class="space-y-1.5">
-                            <span class="font-telemetry text-[11px] text-[#FF5A00] uppercase font-bold tracking-wider">Phase 01 // Physical Paper</span>
-                            <h4 class="text-sm font-bold font-structural text-white">Clerk Point-and-Shoot Batching</h4>
-                            <p class="text-slate-400 text-xs leading-relaxed">
-                                Drivers drop slips into a secure gate box and exit immediately, removing congestion. During lulls, the clerk clears the box and batch-scans copies using a glare-resistant mobile terminal, streaming records instantly to the local gateway over an isolated network loop.
-                            </p>
-                        </div>
+                <!-- Framework 2 -->
+                <div class="rounded bg-slate-950/80 border border-slate-900 p-8 flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono text-emerald-400 font-bold block mb-4">FRAMEWORK 02</span>
+                        <h4 class="text-xl font-bold text-white tracking-tight mb-4">Secure Process Automation</h4>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">
+                            Helps automate repetitive writing tasks (such as draft bids, project summaries, or regulatory replies) using pre-approved templates. Includes an automatic safety switch that pauses the system for human review if a document doesn't meet your pre-defined parameters.
+                        </p>
+                    </div>
+                </div>
 
-                        <div class="space-y-1.5">
-                            <span class="font-telemetry text-[11px] text-[#FF5A00] uppercase font-bold tracking-wider">Phase 02 // Native Digital</span>
-                            <h4 class="text-sm font-bold font-structural text-white">Monitored Hot-Folder Ingestion</h4>
-                            <p class="text-slate-400 text-xs leading-relaxed">
-                                Emailed PDFs and electronic delivery sheets route directly to a network watch-folder on the gateway. The engine logs files instantly, creates a unique cryptographic integrity hash, and automatically filters duplicates to prevent double-counting.
-                            </p>
-                        </div>
-
-                        <div class="space-y-1.5">
-                            <span class="font-telemetry text-[11px] text-[#FF5A00] uppercase font-bold tracking-wider">Phase 03 // Edge Infrastructure</span>
-                            <h4 class="text-sm font-bold font-structural text-white">Generator-Hardened Security</h4>
-                            <p class="text-slate-400 text-xs leading-relaxed">
-                                The entire workspace operates on off-grid hardware. Integrated industrial power conditioning and a built-in battery backup protect the local database from severe voltage spikes, transients, and brownouts common to site generators.
-                            </p>
-                        </div>
-
+                <!-- Framework 3 -->
+                <div class="rounded bg-slate-950/80 border border-slate-900 p-8 flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono text-emerald-400 font-bold block mb-4">FRAMEWORK 03</span>
+                        <h4 class="text-xl font-bold text-white tracking-tight mb-4">Private &amp; Secure Office Assistants</h4>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">
+                            Gives your staff a secure, local chat client for drafting plans or summarizing massive reports. Because it runs 100% inside your office networks, your staff get all the convenience of modern helper tools with absolute data privacy.
+                        </p>
                     </div>
                 </div>
 
             </div>
-        </section>
 
-        <section id="contact" class="bg-[#FAFBFB] py-28 w-full">
-            <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
-                <div class="inline-block text-[10px] font-telemetry bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">// HARDWARE SUBSCRIPTION</div>
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 font-structural leading-tight">Self-Contained Edge Appliances.</h2>
-                <p class="text-slate-600 text-sm leading-relaxed max-w-xl mx-auto">
-                    SHIM arrives on-site as a pre-configured desktop edge appliance with zero IT overhead. Operating completely off-grid and independently of external cloud networks, it maintains its own secure perimeter pipeline without requiring lengthy internal technical reviews.
-                </p>
-                <div class="pt-4">
-                    <a href="mailto:office@shimsys.com?subject=Gatehouse%20Appliance%20Deployment%20Inquiry" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm py-3.5 px-8 rounded-[4px] transition-all hover:shadow-md hover:-translate-y-0.5 duration-150 font-structural">
-                        office@shimsys.com
-                    </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="border-t border-slate-900 bg-slate-950/80 relative z-10 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-8 h-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 009 11.571V9a4 4 0 00-8 0v2.571c0 1.13.188 2.212.53 3.226L1.58 18.02a1.5 1.5 0 001.373 1.03h5.902a1.5 1.5 0 001.074-.45l1.074-1.074M3 8h1.517M13.5 3.524A10.027 10.027 0 0122 12.5v1.5a1.5 1.5 0 01-3 0v-1.5a7 7 0 00-11-5.69m9 1.19a3 3 0 10-5.998-.22" />
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="text-xl font-extrabold tracking-wider text-white">SHIM SYSTEMS</span>
+                            <span class="text-[9px] font-bold tracking-[0.25em] text-emerald-400/80 uppercase">Private AI Architecture</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed max-w-md">
+                        Shim Systems delivers high-performance local AI computing setups, isolated storage gateways, and offline verification models designed specifically for high-risk industrial, construction, and compliance environments.
+                    </p>
+                    <div class="text-[10px] font-mono text-slate-500">
+                        &copy; 2026 Shim Systems Pty Ltd. All Rights Reserved. <br>
+                        Private Infrastructure Architected in Melbourne, Victoria, Australia. <br>
+                        <span class="text-slate-400">Communication:</span> <a href="mailto:office@shimsys.com" class="text-emerald-400 hover:text-emerald-300 hover:underline">office@shimsys.com</a>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-    </main>
-
-    <footer class="bg-white border-t border-slate-200/50 py-12 text-xs text-slate-500">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400">
-                <div class="flex items-center space-x-3">
-                    <span class="font-bold text-slate-900 tracking-wider font-structural">SHIM</span>
-                    <span>© 2026 SHIM SYSTEMS. All rights reserved.</span>
+                <!-- Hardened Architectural Registry Specifications -->
+                <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:text-left">
+                    <div>
+                        <h4 class="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400 mb-3">SYSTEMS SETUP</h4>
+                        <ul class="space-y-1.5 text-xs text-slate-400 font-mono">
+                            <li>&bull; Hardened Local Workspace</li>
+                            <li>&bull; Secure Volume Isolation</li>
+                            <li>&bull; Private Local Processing</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400 mb-3">PRIVATE STORAGE</h4>
+                        <ul class="space-y-1.5 text-xs text-slate-400 font-mono">
+                            <li>&bull; Secure Local Cloud Nodes</li>
+                            <li>&bull; Encrypted Local Folders</li>
+                            <li>&bull; Private Network Integrations</li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
+
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuToggleBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIconPath = document.getElementById('menu-icon');
-
-            menuToggleBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const isHidden = mobileMenu.classList.contains('hidden');
-                if (isHidden) {
-                    mobileMenu.classList.remove('hidden');
-                    menuIconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
-                } else {
-                    mobileMenu.classList.add('hidden');
-                    menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-                }
-            });
-
-            document.querySelectorAll('.mobile-nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                    menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-                });
-            });
-        });
-    </script>
 </body>
 </html>
