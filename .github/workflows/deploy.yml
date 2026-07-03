@@ -19,10 +19,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Job 1: Check out code and upload static files safely
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -37,6 +35,14 @@ jobs:
           # Upload the root directory containing your index.html
           path: '.'
 
+  # Job 2: Deploy the uploaded artifact. This job is isolated so "Re-run failed jobs" won't duplicate the upload.
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
