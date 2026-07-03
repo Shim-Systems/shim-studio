@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shim Studio & Systems - Theme Visualization</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            padding: 40px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-family: system-ui, sans-serif;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* --- SHARED CARD STRUCTURE --- */
+        .preview-card {
+            border-radius: 8px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .theme-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 10px;
+            opacity: 0.6;
+            font-weight: bold;
+        }
+
+        .section-box {
+            border-bottom: 1px solid;
+            padding-bottom: 24px;
+        }
+        
+        .section-box:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* --- THEME 1: BAUHAUS WORKROOM --- */
+        .theme-bauhaus {
+            background-color: #F5F4F0;
+            color: #1A1A1A;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        .theme-bauhaus h2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+        .theme-bauhaus .section-box {
+            border-color: #DDDCD7;
+        }
+        .theme-bauhaus .tag {
+            background-color: #1A1A1A;
+            color: #F5F4F0;
+        }
+        .theme-bauhaus .cta-btn {
+            background-color: #E64A19;
+            color: white;
+        }
+
+        /* --- THEME 2: SECURE SANCTUARY --- */
+        .theme-sanctuary {
+            background-color: #24302B;
+            color: #F9F9F8;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .theme-sanctuary h2 {
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        .theme-sanctuary .section-box {
+            border-color: rgba(221, 220, 215, 0.15);
+        }
+        .theme-sanctuary .tag {
+            background-color: #A3B19B;
+            color: #24302B;
+        }
+        .theme-sanctuary .cta-btn {
+            background-color: #F9F9F8;
+            color: #24302B;
+        }
+        .theme-sanctuary p {
+            opacity: 0.9;
+        }
+
+        /* --- THEME 3: BLUEPRINT STUDIO --- */
+        .theme-blueprint {
+            background-color: #F8FAFC;
+            color: #1E293B;
+            font-family: 'Geist', sans-serif;
+        }
+        .theme-blueprint h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+        }
+        .theme-blueprint .section-box {
+            border-color: #E2E8F0;
+        }
+        .theme-blueprint .tag {
+            background-color: #E2E8F0;
+            color: #1E293B;
+        }
+        .theme-blueprint .cta-btn {
+            background-color: #0284C7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="page-title">Shim Visual Identity Themes</h1>
+
+    <div class="grid">
+
+        <div class="preview-card theme-bauhaus">
+            <div>
+                <div class="theme-label">Option 1: The Bauhaus Workroom</div>
+                <hr style="border: 0; border-top: 2px solid #1A1A1A; margin-bottom: 10px;">
+            </div>
+
+            <div class="section-box">
+                <span class="tag">Studio</span>
+                <h2>Shim Studio</h2>
+                <p>Auditing administrative leakage, mapping document friction, and designing secure, local AI workflows. Built to deliver the precise blueprints that eliminate operational bottlenecks and protect your team's productive focus.</p>
+                <a class="cta-btn">Map Your Friction</a>
+            </div>
+
+            <div class="section-box">
+                <span class="tag">Systems</span>
+                <h2>Shim Systems</h2>
+                <p>Deploying secure, local document assistants, private search tools, and automated check-lists directly behind your corporate firewall. Built to set up safe, private office systems running on your own physical equipment.</p>
+            </div>
+        </div>
+
+        <div class="preview-card theme-sanctuary">
+            <div>
+                <div class="theme-label" style="color: #A3B19B;">Option 2: The Secure Sanctuary</div>
+                <hr style="border: 0; border-top: 2px solid #A3B19B; margin-bottom: 10px;">
+            </div>
+
+            <div class="section-box">
+                <span class="tag">Studio</span>
+                <h2>Shim Studio</h2>
+                <p>Auditing administrative leakage, mapping document friction, and designing secure, local AI workflows. Built to deliver the precise blueprints that eliminate operational bottlenecks and protect your team's productive focus.</p>
+                <a class="cta-btn">Map Your Friction</a>
+            </div>
+
+            <div class="section-box">
+                <span class="tag">Systems</span>
+                <h2>Shim Systems</h2>
+                <p>Deploying secure, local document assistants, private search tools, and automated check-lists directly behind your corporate firewall. Built to set up safe, private office systems running on your own physical equipment.</p>
+            </div>
+        </div>
+
+        <div class="preview-card theme-blueprint">
+            <div>
+                <div class="theme-label">Option 3: The Blueprint Studio</div>
+                <hr style="border: 0; border-top: 2px solid #1E293B; margin-bottom: 10px;">
+            </div>
+
+            <div class="section-box">
+                <span class="tag">Studio</span>
+                <h2>Shim Studio</h2>
+                <p>Auditing administrative leakage, mapping document friction, and designing secure, local AI workflows. Built to deliver the precise blueprints that eliminate operational bottlenecks and protect your team's productive focus.</p>
+                <a class="cta-btn">Map Your Friction</a>
+            </div>
+
+            <div class="section-box">
+                <span class="tag">Systems</span>
+                <h2>Shim Systems</h2>
+                <p>Deploying secure, local document assistants, private search tools, and automated check-lists directly behind your corporate firewall. Built to set up safe, private office systems running on your own physical equipment.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
