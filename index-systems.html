@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIM SYSTEMS | Production-Grade Local AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Monospace Console Aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --systems-bg: #1A1C1E;
+            --systems-bg-card: #22252A;
+            --systems-text: #E6EDF0;
+            --systems-text-muted: #8E969F;
+            --systems-accent-copper: #B2916F;
+            --systems-accent-steel: #5C768D;
+            --systems-font: 'JetBrains Mono', monospace;
+        }
+        body {
+            font-family: var(--systems-font);
+            background-color: var(--systems-bg);
+            color: var(--systems-text);
+            letter-spacing: -0.025em;
+        }
+        /* Design Token: Orthogonal Engineering Grid Background */
+        .systems-grid {
+            background-image: 
+                linear-gradient(rgba(92, 118, 141, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(92, 118, 141, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .border-systems { border-color: rgba(92, 118, 141, 0.25); }
+        .bg-systems-card { background-color: var(--systems-bg-card); }
+        .bg-systems-btn { background-color: var(--systems-accent-copper); }
+        .bg-systems-btn:hover { background-color: #9D7E5D; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col overflow-y-auto relative systems-grid">
+
+    <!-- Header Navigation -->
+    <header class="relative z-10 px-8 py-6 border-b border-systems flex items-center justify-between bg-[#1A1C1E]/80 backdrop-blur-md">
+        <div class="flex items-center gap-3">
+            <!-- Systems Custom Colored SVG Logo -->
+            <div class="flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="#B2916F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-9 h-9">
+                    <path d="M6 14 L18 26 C21 29 25 29 28 26 C31 23 31 19 28 16 L16 4 C13 1 9 1 6 4 C3 7 3 11 6 14 Z" fill="#B2916F" fill-opacity="0.12"></path>
+                    <path d="M11 9 L21 19" stroke-width="4.5" stroke="#5C768D"></path>
+                </svg>
+            </div>
+            <div>
+                <span class="font-semibold text-xs tracking-wider text-[#E6EDF0] block">SHIM SYSTEMS //</span>
+                <span class="text-[9px] text-[#B2916F] font-medium tracking-wider block -mt-0.5">SHIMSYSTEMS.AU</span>
+            </div>
+        </div>
+        <nav class="hidden sm:flex items-center gap-6 text-xs text-[#8E969F] uppercase">
+            <span onclick="document.getElementById('systems-frameworks-section').scrollIntoView({behavior: 'smooth'})" class="hover:text-[#B2916F] cursor-pointer">[FRAMEWORKS]</span>
+            <a href="index_studio.html" target="_parent" class="text-xs py-1 px-2 border border-systems rounded text-[#B2916F] hover:bg-[#B2916F]/10 transition-all">STUDIO_BLUEPRINT</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="relative z-10 flex-grow px-8 py-12 max-w-2xl mx-auto flex flex-col justify-center">
+        
+        <!-- Hero Core -->
+        <div class="mb-12">
+            <div class="inline-flex items-center gap-2 text-xs text-[#8E969F] border border-systems bg-systems-card/50 px-3 py-1.5 rounded mb-4 font-mono">
+                CONTAINERISED DELIVERY
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-[#E6EDF0] leading-snug mb-4">
+                Production-Grade Local AI.<br>Built on Rigid Guardrails.
+            </h2>
+            <p class="text-sm text-[#B2916F] leading-relaxed mb-6">
+                > We turn complex AI blueprints into secure, unbreakable local software containers that automate complex workflows—without letting a single byte of data leave your network.
+            </p>
+            <p class="text-xs text-[#8E969F] leading-relaxed mb-8 font-mono">
+                Operating on a philosophy of prototype engineering, we quickly validate data flows before locking them into rigid, deterministic state machines. We deliver private, offline AI engines packaged inside secure Docker containers. Your data stays internal, models run locally, and handovers map directly to your existing IT infrastructure.
+            </p>
+            <div class="flex flex-wrap gap-4 font-mono">
+                <button onclick="document.getElementById('systems-contact-section').scrollIntoView({behavior: 'smooth'})" class="bg-systems-btn text-white px-6 py-3 text-xs font-semibold rounded border border-amber-800/20 transition-colors">
+                    Get in Touch
+                </button>
+                <button onclick="document.getElementById('systems-frameworks-section').scrollIntoView({behavior: 'smooth'})" class="border border-systems text-[#E6EDF0] px-6 py-3 text-xs font-semibold rounded bg-systems-card/50 hover:border-[#5C768D] transition-colors">
+                    Our Frameworks
+                </button>
+            </div>
+        </div>
+
+        <!-- Automation Frameworks Segment -->
+        <section id="systems-frameworks-section" class="border-t border-systems pt-10 mb-16 scroll-mt-6">
+            <h3 class="text-xs uppercase font-extrabold tracking-widest text-[#5C768D] mb-6">// AUTOMATION FRAMEWORKS</h3>
+            
+            <div class="grid gap-6">
+                <!-- Card 1 -->
+                <div class="bg-systems-card p-6 border border-systems rounded relative">
+                    <div class="absolute top-0 right-0 p-2 text-xs text-[#8E969F] select-none">
+                        [FW-01]
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="p-2 bg-systems/80 border border-systems rounded text-[#B2916F]">
+                            <i data-lucide="file-text" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-[#E6EDF0] mb-1">Automatic Document Reading &amp; Organising</h4>
+                            <p class="text-xs text-[#8E969F] leading-relaxed">
+                                Automatically ingests and parses complex, multi-page PDFs (such as technical checklists, regulatory filings, or compliance records). Built with a logical tenancy gateway, it guarantees absolute data isolation with zero internal cross-contamination.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-systems-card p-6 border border-systems rounded relative">
+                    <div class="absolute top-0 right-0 p-2 text-xs text-[#8E969F] select-none">
+                        [FW-02]
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="p-2 bg-systems/80 border border-systems rounded text-[#5C768D]">
+                            <i data-lucide="git-branch" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-[#E6EDF0] mb-1">Secure Process Automation</h4>
+                            <p class="text-xs text-[#8E969F] leading-relaxed">
+                                Accelerates repetitive writing tasks (like drafting project summaries, bids, or standard responses) using pre-approved templates. Includes a hardcoded safety switch that automatically pauses the system for human review if data parameters aren't met, and logs every processing step to an audit-ready database.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-systems-card p-6 border border-systems rounded relative">
+                    <div class="absolute top-0 right-0 p-2 text-xs text-[#8E969F] select-none">
+                        [FW-03]
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="p-2 bg-systems/80 border border-systems rounded text-zinc-500">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-[#E6EDF0] mb-1">Private &amp; Secure Office Assistants</h4>
+                            <p class="text-xs text-[#8E969F] leading-relaxed">
+                                Deploys a secure, local chat interface for drafting documentation or summarising massive internal reports. Backed by asynchronous task routing, the interface remains fast and fluid even during heavy reasoning workloads. Runs 100% inside your network with absolute data privacy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Direct Contact Inquiries Form -->
+        <section id="systems-contact-section" class="border-t border-systems pt-10 mb-16 scroll-mt-6">
+            <h3 class="text-xs uppercase font-extrabold tracking-widest text-[#B2916F] mb-3">// DIRECT ENQUIRY</h3>
+            <p class="text-xs text-[#8E969F] mb-6 max-w-md font-mono">
+                Please enter your details below. We will review your enquiry and respond to your corporate email address.
+            </p>
+            <form class="space-y-4 max-w-md font-mono" onsubmit="handleFormSubmit(event)">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div>
+                        <label class="block text-[9px] uppercase font-semibold text-[#8E969F] mb-1">Corporate Email</label>
+                        <input type="email" placeholder="name@organisation.com.au" class="w-full bg-[#22252A] border border-systems rounded px-3 py-2 text-xs text-[#E6EDF0] focus:outline-none focus:border-[#B2916F] shadow-sm" required>
+                    </div>
+                    <div>
+                        <label class="block text-[9px] uppercase font-semibold text-[#8E969F] mb-1">Infrastructure Target</label>
+                        <input type="text" placeholder="e.g. Dedicated Server, GPU Workstation" class="w-full bg-[#22252A] border border-systems rounded px-3 py-2 text-xs text-[#E6EDF0] focus:outline-none focus:border-[#B2916F] shadow-sm" required>
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-systems-btn text-white py-2 px-4 text-xs font-semibold tracking-wider uppercase transition-all rounded border border-amber-800/20 hover:bg-[#9D7E5D]">
+                    Submit Enquiry
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-2xl mx-auto w-full border-t border-systems pt-12 pb-8 flex flex-col md:flex-row items-center justify-between gap-6 px-8">
+        <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="#B2916F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8">
+                    <path d="M6 14 L18 26 C21 29 25 29 28 26 C31 23 31 19 28 16 L16 4 C13 1 9 1 6 4 C3 7 3 11 6 14 Z" fill="#B2916F" fill-opacity="0.12"></path>
+                    <path d="M11 9 L21 19" stroke-width="4.5" stroke="#5C768D"></path>
+                </svg>
+            </div>
+            <div>
+                <span class="font-bold text-xs text-[#E6EDF0] block">SHIM SYSTEMS //</span>
+                <span class="text-[10px] text-[#8E969F] font-medium uppercase tracking-wider">Unlocking Productive Time. Safely.</span>
+            </div>
+        </div>
+        <div class="text-right md:text-right flex flex-col items-center md:items-end gap-1">
+            <span class="text-xs text-[#E6EDF0]">Enquiries: <a href="#" class="shim-contact text-[#B2916F] hover:underline decoration-dotted" data-show-text="true"></a></span>
+            <div class="flex gap-2 text-[10px] text-[#8E969F]">
+                <button onclick="openPrivacyModal()" class="hover:text-[#B2916F] transition-colors focus:outline-none">[PRIVACY POLICY]</button>
+                <span>//</span>
+                <span>&copy; 2026 Shim Systems.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal Overlay -->
+    <div id="privacy-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-gray-950/85 backdrop-blur-sm p-4">
+        <div class="bg-gray-900 text-[#E6EDF0] max-w-lg w-full rounded p-8 shadow-2xl border border-gray-800 relative font-mono text-xs">
+            <button onclick="closePrivacyModal()" class="absolute top-6 right-6 text-gray-500 hover:text-white transition-colors focus:outline-none">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <h3 class="text-lg font-bold text-white mb-4 tracking-tight flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-5 h-5 text-[#B2916F]"></i> Sovereignty &amp; Privacy Policy
+            </h3>
+            <div class="text-[#8E969F] space-y-4 leading-relaxed font-medium">
+                <p>This website operates strictly as a static point of contact. We do not utilise tracking cookies, performance analytics, or third-party marketing trackers of any kind.</p>
+                <p>If you choose to submit an enquiry via our forms, we temporarily collect and process only the contact details and operational parameters you explicitly provide. This information is used solely to respond to your request and is handled with strict confidentiality; we do not share, sell, or distribute it.</p>
+                <p>All software we build is deployed directly into your own private IT environment. We do not host your systems on our web servers, ensuring your business documents, files, and operational tools remain entirely within your own controlled network.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Non-blocking custom toast confirmation -->
+    <div id="toast-notification" class="fixed bottom-6 right-6 z-50 hidden items-center gap-3 bg-gray-900 border border-gray-800 px-5 py-4 rounded-lg shadow-2xl max-w-sm animate-bounce font-mono">
+        <div class="p-1.5 bg-emerald-950/20 border border-emerald-800/30 rounded text-emerald-500">
+            <i data-lucide="check" class="w-4 h-4"></i>
+        </div>
+        <div>
+            <h4 class="text-xs font-bold text-white">// ENQUIRY_LOGGED</h4>
+            <p class="text-[10px] text-gray-500 mt-0.5">Parameters validated. We will review your infrastructure stack shortly.</p>
+        </div>
+    </div>
+
+    <script>
+        // Init icons
+        lucide.createIcons();
+
+        // Privacy Modal Controls
+        function openPrivacyModal() {
+            document.getElementById('privacy-modal').classList.replace('hidden', 'flex');
+        }
+        function closePrivacyModal() {
+            document.getElementById('privacy-modal').classList.replace('flex', 'hidden');
+        }
+
+        // Handle submissions without using alert()
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const toast = document.getElementById('toast-notification');
+            toast.classList.replace('hidden', 'flex');
+            event.target.reset();
+            setTimeout(() => {
+                toast.classList.replace('flex', 'hidden');
+            }, 3000);
+        }
+
+        // Close on window click
+        window.onclick = function(event) {
+            const modal = document.getElementById('privacy-modal');
+            if (event.target === modal) {
+                closePrivacyModal();
+            }
+        }
+
+        // Spam Protection Obfuscator: dynamically assembles email in memory
+        document.addEventListener("DOMContentLoaded", () => {
+            const account = "office";
+            const domain = "shimsystems.au";
+            const assembledEmail = `${account}@${domain}`;
+            document.querySelectorAll('.shim-contact').forEach(element => {
+                element.href = `mailto:${assembledEmail}`;
+                if (element.getAttribute('data-show-text') === 'true') {
+                    element.textContent = assembledEmail;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
