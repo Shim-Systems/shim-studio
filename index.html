@@ -55,7 +55,6 @@
             </div>
         </div>
         <nav class="hidden sm:flex items-center gap-6 text-xs font-semibold tracking-wider text-[#1A1D20]/70">
-            <span onclick="document.getElementById('studio-process-section').scrollIntoView({behavior: 'smooth'})" class="hover:text-[#8C7853] transition-colors duration-300 cursor-pointer uppercase">OUR PROCESS</span>
             <a href="index-systems.html" class="text-xs py-1.5 px-3 border border-[#8C7853]/30 rounded text-[#8C7853] hover:bg-[#8C7853]/5 transition-all duration-300">SYSTEMS ENGINE</a>
         </nav>
     </header>
@@ -78,19 +77,19 @@
                 The greatest obstacle to AI adoption in protected organizations isn’t technical capability—it’s operational risk. Organizations handling highly private documents, personal files, and strict statutory compliance briefs are rightfully held back by standard cloud-native designs. Public APIs introduce severe data leakage, compliance exposures, and unpredictable third-party behaviors.
             </p>
             
-            <div class="flex flex-wrap gap-4">
-                <a href="#" class="shim-contact bg-studio-btn text-white px-7 py-3.5 text-xs font-bold tracking-wider uppercase shadow-sm hover:shadow-md hover:translate-y-[-1px] transition-all duration-300 rounded inline-block text-center">
+            <div>
+                <a href="#" class="shim-contact bg-studio-btn text-white px-8 py-4 text-xs font-bold tracking-wider uppercase shadow-sm hover:shadow-md hover:translate-y-[-1px] transition-all duration-300 rounded inline-block text-center min-w-[160px]">
                     Contact Us
                 </a>
-                <button onclick="document.getElementById('studio-process-section').scrollIntoView({behavior: 'smooth'})" class="border border-[#1A1D20]/20 text-[#1A1D20] px-7 py-3.5 text-xs font-bold tracking-wider uppercase rounded bg-white/40 backdrop-blur-sm hover:bg-white/70 hover:border-[#1A1D20]/40 hover:translate-y-[-1px] transition-all duration-300">
-                    Our Process
-                </button>
             </div>
         </div>
 
         <!-- Strategy Steps Section -->
-        <section id="studio-process-section" class="border-t border-gray-200/80 pt-12 mb-20 scroll-mt-6">
-            <h3 class="text-xs uppercase font-extrabold tracking-widest text-gray-400 mb-8">How We De-Risk Your Infrastructure</h3>
+        <section id="studio-process-section" class="border-t border-gray-200/80 pt-14 mb-20">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="w-8 h-[1px] bg-gray-300"></span>
+                <h3 class="text-xs uppercase font-extrabold tracking-widest text-gray-400">Our Method: De-risking your Infrastructure</h3>
+            </div>
             
             <div class="grid gap-6">
                 <!-- Step 1 -->
@@ -144,7 +143,7 @@
         </section>
 
         <!-- Architectural Statement / Signature -->
-        <section class="border-t border-b border-gray-200/60 py-12 text-center bg-[#8C7853]/5 rounded-lg px-6 backdrop-blur-sm">
+        <section class="border-t border-b border-gray-200/60 py-12 mb-12 text-center bg-[#8C7853]/5 rounded-lg px-6 backdrop-blur-sm">
             <p class="text-sm italic text-gray-700 font-medium max-w-lg mx-auto leading-relaxed">
                 "True operational sovereignty requires systems that are local, self-contained, and completely within your own physical custody."
             </p>
