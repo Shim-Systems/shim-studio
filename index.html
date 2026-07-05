@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIM STUDIO | Strategic AI Advisory</title>
+    <title>SHIM STUDIO | Strategic AI Advisory &amp; Governance</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for High-End Typography -->
@@ -26,6 +26,7 @@
             font-family: var(--studio-font);
             background-color: var(--studio-bg);
             color: var(--studio-text);
+            -webkit-font-smoothing: antialiased;
         }
         /* Design Token: Radial Dot-Matrix Grid Background */
         .studio-grid {
@@ -36,10 +37,10 @@
         .bg-studio-btn:hover { background-color: #766444; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col overflow-y-auto relative studio-grid">
+<body class="min-h-screen flex flex-col overflow-y-auto relative studio-grid selection:bg-[#8C7853]/20">
 
     <!-- Header Navigation -->
-    <header class="relative z-10 px-8 py-6 border-b border-gray-200/60 flex items-center justify-between bg-white/40 backdrop-blur-md">
+    <header class="relative z-10 px-8 py-6 border-b border-gray-200/40 flex items-center justify-between bg-white/30 backdrop-blur-md transition-all duration-300">
         <div class="flex items-center gap-3">
             <!-- Studio Custom Colored SVG Logo -->
             <div class="flex items-center justify-center">
@@ -54,87 +55,87 @@
             </div>
         </div>
         <nav class="hidden sm:flex items-center gap-6 text-xs font-semibold tracking-wider text-[#1A1D20]/70">
-            <span onclick="document.getElementById('studio-process-section').scrollIntoView({behavior: 'smooth'})" class="hover:text-[#8C7853] cursor-pointer uppercase">OUR PROCESS</span>
-            <a href="index_systems.html" target="_parent" class="text-xs py-1.5 px-3 border border-[#8C7853]/30 rounded text-[#8C7853] hover:bg-[#8C7853]/5 transition-all">SYSTEMS ENGINE</a>
+            <span onclick="document.getElementById('studio-process-section').scrollIntoView({behavior: 'smooth'})" class="hover:text-[#8C7853] transition-colors duration-300 cursor-pointer uppercase">OUR PROCESS</span>
+            <a href="index-systems.html" class="text-xs py-1.5 px-3 border border-[#8C7853]/30 rounded text-[#8C7853] hover:bg-[#8C7853]/5 transition-all duration-300">SYSTEMS ENGINE</a>
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="relative z-10 flex-grow px-8 py-12 max-w-2xl mx-auto flex flex-col justify-center">
+    <main class="relative z-10 flex-grow px-8 py-16 max-w-2xl mx-auto flex flex-col justify-center">
         
         <!-- Hero Core -->
-        <div class="mb-12">
-            <span class="text-xs uppercase font-bold tracking-widest text-[#8C7853] bg-[#8C7853]/10 px-3 py-1 rounded-full border border-[#8C7853]/20 inline-block mb-4">
+        <div class="mb-14">
+            <span class="text-xs uppercase font-bold tracking-widest text-[#8C7853] bg-[#8C7853]/10 px-3.5 py-1 rounded-full border border-[#8C7853]/20 inline-block mb-6">
                 Strategic Advisory
             </span>
-            <h2 class="text-3xl md:text-4xl font-bold text-[#1A1D20] tracking-tight leading-tight mb-4">
-                De-risk your AI strategy.<br>Reclaim productive time.
+            <h2 class="text-3xl md:text-4xl font-bold text-[#1A1D20] tracking-tight leading-tight mb-5">
+                De-risk your AI strategy.<br>Reclaim critical workflow capacity.
             </h2>
             <p class="text-base text-gray-600 font-medium leading-relaxed mb-6">
-                Clear, structured, and risk-mitigated pathways to automation—backed by rigorous systems engineering and adaptive hardware routing.
+                Clear, structured, and risk-mitigated pathways to automation—engineered specifically for high-security, sensitive, and regulated organizational environments.
             </p>
-            <p class="text-sm text-gray-500 leading-relaxed mb-8">
-                The greatest obstacle to AI adoption isn’t capability—it’s risk. Many organisations want to harness the efficiency of generative AI but are rightfully held back by concerns over data leaks, intellectual property exposure, and unpredictable system behaviours.
+            <p class="text-sm text-gray-500 leading-relaxed mb-10">
+                The greatest obstacle to AI adoption in protected organizations isn’t technical capability—it’s operational risk. Organizations handling highly private documents, personal files, and strict statutory compliance briefs are rightfully held back by standard cloud-native designs. Public APIs introduce severe data leakage, compliance exposures, and unpredictable third-party behaviors.
             </p>
             
             <div class="flex flex-wrap gap-4">
-                <button onclick="document.getElementById('studio-contact-section').scrollIntoView({behavior: 'smooth'})" class="bg-studio-btn text-white px-6 py-3 text-xs font-bold tracking-wider uppercase shadow-md hover:shadow-lg transition-all rounded">
-                    Get in Touch
+                <button onclick="document.getElementById('studio-contact-section').scrollIntoView({behavior: 'smooth'})" class="bg-studio-btn text-white px-7 py-3.5 text-xs font-bold tracking-wider uppercase shadow-sm hover:shadow-md hover:translate-y-[-1px] transition-all duration-300 rounded">
+                    Request Strategic Briefing
                 </button>
-                <button onclick="document.getElementById('studio-process-section').scrollIntoView({behavior: 'smooth'})" class="border border-[#1A1D20]/20 text-[#1A1D20] px-6 py-3 text-xs font-bold tracking-wider uppercase rounded bg-white/50 hover:border-[#1A1D20]/60 transition-colors">
+                <button onclick="document.getElementById('studio-process-section').scrollIntoView({behavior: 'smooth'})" class="border border-[#1A1D20]/20 text-[#1A1D20] px-7 py-3.5 text-xs font-bold tracking-wider uppercase rounded bg-white/40 backdrop-blur-sm hover:bg-white/70 hover:border-[#1A1D20]/40 hover:translate-y-[-1px] transition-all duration-300">
                     Our Process
                 </button>
             </div>
         </div>
 
         <!-- Strategy Steps Section -->
-        <section id="studio-process-section" class="border-t border-gray-200 pt-10 mb-16 scroll-mt-6">
-            <h3 class="text-xs uppercase font-extrabold tracking-widest text-gray-400 mb-6">How We De-Risk Your Strategy</h3>
+        <section id="studio-process-section" class="border-t border-gray-200/80 pt-12 mb-20 scroll-mt-6">
+            <h3 class="text-xs uppercase font-extrabold tracking-widest text-gray-400 mb-8">How We De-Risk Your Infrastructure</h3>
             
             <div class="grid gap-6">
                 <!-- Step 1 -->
-                <div class="bg-white p-6 border border-gray-200/75 rounded shadow-sm relative overflow-hidden">
+                <div class="bg-white/60 backdrop-blur-sm p-6 border border-gray-200/50 rounded shadow-sm hover:shadow-md hover:bg-white/80 transition-all duration-300 relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-[4px] h-full bg-[#8C7853]"></div>
-                    <div class="flex items-start gap-4">
-                        <div class="p-2.5 bg-gray-50 border border-gray-100 rounded text-[#8C7853]">
+                    <div class="flex items-start gap-5">
+                        <div class="p-2.5 bg-gray-50/80 border border-gray-100 rounded text-[#8C7853]">
                             <i data-lucide="search-code" class="w-5 h-5"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-sm text-[#1A1D20] mb-1">Step 01: Friction Audit</h4>
-                            <p class="text-xs text-gray-500 leading-relaxed">
-                                Workflows are mapped to isolate where staff lose critical hours to repetitive administrative tasks. Whether parsing manual checklists, auditing complex compliance files, or sorting through unstructured corporate records, Shim Studio locates the bottlenecks.
+                            <h4 class="font-bold text-sm text-[#1A1D20] mb-1.5">Step 01: Operational Friction Audit</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed font-medium">
+                                Workflows are mapped to isolate where staff lose critical operational hours to manual administrative processing. Whether verifying complex checklist compliance, cross-checking unstructured registry documents, or auditing records, Shim Studio identifies the exact bottlenecks.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="bg-white p-6 border border-gray-200/75 rounded shadow-sm relative overflow-hidden">
+                <div class="bg-white/60 backdrop-blur-sm p-6 border border-gray-200/50 rounded shadow-sm hover:shadow-md hover:bg-white/80 transition-all duration-300 relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-[4px] h-full bg-[#4A607A]"></div>
-                    <div class="flex items-start gap-4">
-                        <div class="p-2.5 bg-gray-50 border border-gray-100 rounded text-[#4A607A]">
+                    <div class="flex items-start gap-5">
+                        <div class="p-2.5 bg-gray-50/80 border border-gray-100 rounded text-[#4A607A]">
                             <i data-lucide="shield-check" class="w-5 h-5"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-sm text-[#1A1D20] mb-1">Step 02: Risk &amp; Governance Assessment</h4>
-                            <p class="text-xs text-gray-500 leading-relaxed">
-                                Operational risks and data exposure are systematically evaluated. Uncompromising privacy guardrails are established to ensure no proprietary data, intellectual property, or sensitive client information can ever leak outside the organisation.
+                            <h4 class="font-bold text-sm text-[#1A1D20] mb-1.5">Step 02: Sovereignty &amp; Governance Mapping</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed font-medium">
+                                Regulatory risks and data boundaries are rigorously evaluated. Uncompromising privacy frameworks are established to ensure no sensitive files, internal organizational IP, or personal information can ever leak outside your private system host.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="bg-white p-6 border border-gray-200/75 rounded shadow-sm relative overflow-hidden">
+                <div class="bg-white/60 backdrop-blur-sm p-6 border border-gray-200/50 rounded shadow-sm hover:shadow-md hover:bg-white/80 transition-all duration-300 relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-[4px] h-full bg-gray-500"></div>
-                    <div class="flex items-start gap-4">
-                        <div class="p-2.5 bg-gray-50 border border-gray-100 rounded text-gray-500">
+                    <div class="flex items-start gap-5">
+                        <div class="p-2.5 bg-gray-50/80 border border-gray-100 rounded text-gray-500">
                             <i data-lucide="cpu" class="w-5 h-5"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-sm text-[#1A1D20] mb-1">Step 03: Hardware Blueprint</h4>
-                            <p class="text-xs text-gray-500 leading-relaxed">
-                                A custom technical roadmap is designed to match your existing environment. Shim Studio provides a tiered hardware specification, ensuring your custom AI engine can run stably on your existing standard CPU-only servers immediately, with a seamless, configuration-driven path to scale.
+                            <h4 class="font-bold text-sm text-[#1A1D20] mb-1.5">Step 03: Environment Blueprint</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed font-medium">
+                                A custom technical roadmap is designed to match your secure, on-premises environment. Shim Studio outlines structured specifications (S, M, L, XL) ensuring your local AI engine runs stably on dedicated host server units or isolated internal network configurations.
                             </p>
                         </div>
                     </div>
@@ -142,25 +143,35 @@
             </div>
         </section>
 
-        <!-- Direct Contact Inquiries Form -->
-        <section id="studio-contact-section" class="border-t border-gray-200 pt-10 mb-16 scroll-mt-6">
-            <h3 class="text-xs uppercase font-extrabold tracking-widest text-[#8C7853] mb-3">Direct Enquiry</h3>
-            <p class="text-xs text-gray-500 mb-6 max-w-md">
-                Please enter your details below. We will review your enquiry and respond to your corporate email address.
+        <!-- Architectural Statement / Signature (Polished, Gimmick-Free Design) -->
+        <section class="border-t border-b border-gray-200/60 py-12 mb-20 text-center bg-[#8C7853]/5 rounded-lg px-6 backdrop-blur-sm">
+            <p class="text-sm italic text-gray-700 font-medium max-w-lg mx-auto leading-relaxed">
+                "True operational sovereignty requires systems that are local, self-contained, and completely within your own physical custody."
             </p>
-            <form class="space-y-4 max-w-md" onsubmit="handleFormSubmit(event)">
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-[#8C7853] block mt-4.5">
+                — Lead Systems Architect, Shim Systems
+            </span>
+        </section>
+
+        <!-- Direct Contact Inquiries Form -->
+        <section id="studio-contact-section" class="border-t border-gray-200/80 pt-12 mb-16 scroll-mt-6">
+            <h3 class="text-xs uppercase font-extrabold tracking-widest text-[#8C7853] mb-3">Briefing Request</h3>
+            <p class="text-xs text-gray-500 mb-8 max-w-md font-medium">
+                Please enter your details below. We strictly communicate via secure, verified organizational domains.
+            </p>
+            <form class="space-y-5 max-w-md" onsubmit="handleFormSubmit(event)">
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
                     <div>
-                        <label class="block text-[9px] uppercase font-bold text-gray-400 mb-1">Corporate Email</label>
-                        <input type="email" placeholder="name@organisation.com.au" class="w-full bg-white border border-gray-200 rounded px-3 py-2 text-xs text-[#1A1D20] focus:outline-none focus:border-[#8C7853] shadow-sm" required>
+                        <label class="block text-[9px] uppercase font-bold text-gray-400 mb-1.5 tracking-wider">Secure Email</label>
+                        <input type="email" placeholder="name@organisation.org.au" class="w-full bg-white border border-gray-200/80 rounded px-4 py-2.5 text-xs text-[#1A1D20] focus:outline-none focus:border-[#8C7853] focus:ring-1 focus:ring-[#8C7853]/50 shadow-sm transition-all duration-300" required>
                     </div>
                     <div>
-                        <label class="block text-[9px] uppercase font-bold text-gray-400 mb-1">Operational Area</label>
-                        <input type="text" placeholder="e.g. Compliance, Estimating" class="w-full bg-white border border-gray-200 rounded px-3 py-2 text-xs text-[#1A1D20] focus:outline-none focus:border-[#8C7853] shadow-sm" required>
+                        <label class="block text-[9px] uppercase font-bold text-gray-400 mb-1.5 tracking-wider">Operational Area</label>
+                        <input type="text" placeholder="e.g. Audit, Intake, Planning" class="w-full bg-white border border-gray-200/80 rounded px-4 py-2.5 text-xs text-[#1A1D20] focus:outline-none focus:border-[#8C7853] focus:ring-1 focus:ring-[#8C7853]/50 shadow-sm transition-all duration-300" required>
                     </div>
                 </div>
-                <button type="submit" class="w-full bg-studio-btn text-white py-2 px-4 text-xs font-bold tracking-wider uppercase transition-all rounded shadow-sm hover:shadow">
-                    Submit Enquiry
+                <button type="submit" class="w-full bg-studio-btn text-white py-3 px-4 text-xs font-bold tracking-wider uppercase transition-all duration-300 rounded shadow-sm hover:shadow hover:bg-[#766444]">
+                    Submit Briefing Request
                 </button>
             </form>
         </section>
@@ -180,10 +191,10 @@
                 <span class="text-[10px] text-gray-400 font-semibold uppercase tracking-wider">Unlocking Productive Time. Safely.</span>
             </div>
         </div>
-        <div class="text-right md:text-right flex flex-col items-center md:items-end gap-1">
-            <span class="text-xs text-gray-500 font-medium">Enquiries: <a href="#" class="shim-contact text-[#8C7853] hover:underline decoration-dotted" data-show-text="true"></a></span>
-            <div class="flex gap-2 text-[10px] text-gray-400 font-sans">
-                <button onclick="openPrivacyModal()" class="hover:text-[#8C7853] transition-colors focus:outline-none">Privacy Policy</button>
+        <div class="text-right md:text-right flex flex-col items-center md:items-end gap-1.5">
+            <span class="text-xs text-gray-500 font-medium">Enquiries: <a href="#" class="shim-contact text-[#8C7853] hover:underline decoration-dotted transition-colors duration-300" data-show-text="true"></a></span>
+            <div class="flex gap-2 text-[10px] text-gray-400 font-sans font-medium">
+                <button onclick="openPrivacyModal()" class="hover:text-[#8C7853] transition-colors focus:outline-none">Sovereignty &amp; Privacy Policy</button>
                 <span>&bull;</span>
                 <span>&copy; 2026 Shim Studio. All rights reserved.</span>
             </div>
@@ -200,7 +211,7 @@
                 <i data-lucide="shield-check" class="w-5 h-5 text-[#8C7853]"></i> Sovereignty &amp; Privacy Policy
             </h3>
             <div class="text-xs text-gray-600 space-y-4 leading-relaxed font-medium">
-                <p>This website operates strictly as a static point of contact. We do not utilise tracking cookies, performance analytics, or third-party marketing trackers of any kind.</p>
+                <p>This website operates strictly as a static point of contact. We do not utilize tracking cookies, performance analytics, or third-party marketing trackers of any kind.</p>
                 <p>If you choose to submit an enquiry via our forms, we temporarily collect and process only the contact details and operational parameters you explicitly provide. This information is used solely to respond to your request and is handled with strict confidentiality; we do not share, sell, or distribute it.</p>
                 <p>All software we build is deployed directly into your own private IT environment. We do not host your systems on our web servers, ensuring your business documents, files, and operational tools remain entirely within your own controlled network.</p>
             </div>
@@ -213,8 +224,8 @@
             <i data-lucide="check" class="w-4 h-4"></i>
         </div>
         <div>
-            <h4 class="text-xs font-bold text-gray-900">Enquiry Received</h4>
-            <p class="text-[10px] text-gray-500 mt-0.5">We will review your strategic profile and reply shortly.</p>
+            <h4 class="text-xs font-bold text-gray-900">Briefing Request Received</h4>
+            <p class="text-[10px] text-gray-500 mt-0.5 font-medium">We will review your organizational parameters and reply shortly.</p>
         </div>
     </div>
 
