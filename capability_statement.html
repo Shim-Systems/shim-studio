@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <title>Shim Systems // Capability Statement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --studio-bg: #FFFFFF;
+            --studio-text: #1A1D20;
+            --studio-text-muted: #5A5E63;
+            --studio-accent-bronze: #8C7853;
+            --studio-accent-steel: #4A607A;
+            --studio-font: 'Plus Jakarta Sans', sans-serif;
+            --mono-font: 'JetBrains Mono', monospace;
+        }
+
+        /* Strict Single-Page A4 Budgeting */
+        @page {
+            size: A4 portrait;
+            margin: 12mm 15mm 12mm 15mm;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--studio-font);
+            background-color: var(--studio-bg);
+            color: var(--studio-text);
+            line-height: 1.38;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page-container {
+            width: 100%;
+            max-width: 180mm; 
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Structural Corner Tick Marks */
+        .print-mark {
+            position: absolute;
+            width: 6mm;
+            height: 6mm;
+            border-color: var(--studio-accent-bronze);
+            opacity: 0.35;
+            border-style: solid;
+            pointer-events: none;
+        }
+        .pm-tl { top: -6mm; left: -8mm; border-width: 0.5pt 0 0 0.5pt; }
+        .pm-tr { top: -6mm; right: -8mm; border-width: 0.5pt 0.5pt 0 0; }
+        .pm-bl { bottom: -6mm; left: -8mm; border-width: 0 0 0.5pt 0.5pt; }
+        .pm-br { bottom: -6mm; right: -8mm; border-width: 0 0.5pt 0.5pt 0; }
+
+        /* Compressed Header Row */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            border-bottom: 2px solid var(--studio-text);
+            padding-bottom: 10px;
+            margin-bottom: 14px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .brand-section h1 {
+            font-size: 17pt;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--studio-text);
+            line-height: 1.1;
+        }
+
+        .brand-section p {
+            font-size: 9pt;
+            font-weight: 500;
+            color: var(--studio-accent-bronze);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-top: 1px;
+        }
+
+        /* Compact Profile Introduction Callout */
+        .intro-callout {
+            border-left: 3px solid var(--studio-accent-bronze);
+            background-image: radial-gradient(rgba(140, 120, 83, 0.05) 1px, transparent 1px);
+            background-size: 14px 14px;
+            background-color: rgba(140, 120, 83, 0.01);
+            padding: 10px 14px;
+            margin-bottom: 16px;
+        }
+
+        .intro-callout p {
+            font-size: 9.5pt;
+            font-weight: 400;
+            color: var(--studio-text);
+            line-height: 1.45;
+        }
+
+        /* Section Block Architecture */
+        .section-title {
+            font-family: var(--mono-font);
+            font-size: 8pt;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--studio-accent-steel);
+            border-bottom: 1px solid rgba(74, 96, 122, 0.2);
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+
+        /* Grid Framework spacing tweaks */
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .cap-card {
+            background: #FFFFFF;
+            border: 1px solid rgba(26, 29, 32, 0.1);
+            padding: 10px;
+        }
+
+        .cap-card h3 {
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: var(--studio-text);
+            margin-bottom: 4px;
+        }
+
+        .cap-card p {
+            font-size: 8pt;
+            color: var(--studio-text-muted);
+            line-height: 1.35;
+        }
+
+        /* Matrix Table spacing tweaks */
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+        }
+
+        .matrix-table th {
+            font-family: var(--mono-font);
+            font-size: 7pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-align: left;
+            background-color: rgba(26, 29, 32, 0.03);
+            color: var(--studio-text);
+            padding: 6px 10px;
+            border: 1px solid rgba(26, 29, 32, 0.1);
+        }
+
+        .matrix-table td {
+            font-size: 8.5pt;
+            padding: 7px 10px;
+            border: 1px solid rgba(26, 29, 32, 0.1);
+            vertical-align: top;
+            line-height: 1.35;
+        }
+
+        .matrix-table td strong {
+            font-weight: 600;
+            color: var(--studio-text);
+        }
+
+        .matrix-table tr:nth-child(even) {
+            background-color: rgba(26, 29, 32, 0.005);
+        }
+
+        /* Strategic Pillars Framework */
+        .pillars-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .pillar-item {
+            padding-right: 6px;
+        }
+
+        .pillar-item h4 {
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: var(--studio-text);
+            margin-bottom: 2px;
+        }
+
+        .pillar-item p {
+            font-size: 8pt;
+            color: var(--studio-text-muted);
+            line-height: 1.35;
+        }
+
+        /* Native Architectural Footer Layout */
+        footer {
+            border-top: 1px solid rgba(26, 29, 32, 0.12);
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 9pt;
+        }
+
+        .footer-text {
+            font-weight: 500;
+            color: var(--studio-text);
+        }
+
+        .footer-text span {
+            color: var(--studio-text-muted);
+            margin: 0 6px;
+            font-family: var(--mono-font);
+        }
+
+        .footer-link {
+            font-family: var(--mono-font);
+            font-size: 8.5pt;
+            color: var(--studio-accent-bronze);
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        
+        <!-- Print/Crop Corners -->
+        <div class="print-mark pm-tl"></div>
+        <div class="print-mark pm-tr"></div>
+        <div class="print-mark pm-bl"></div>
+        <div class="print-mark pm-br"></div>
+        
+        <!-- Header Architecture -->
+        <header class="header">
+            <div class="logo-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="#8C7853" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px;">
+                    <path d="M6 14 L18 26 C21 29 25 29 28 26 C31 23 31 19 28 16 L16 4 C13 1 9 1 6 4 C3 7 3 11 6 14 Z" fill="#8C7853" fill-opacity="0.08"></path>
+                    <path d="M11 9 L21 19" stroke-width="4.5" stroke="#4A607A"></path>
+                </svg>
+            </div>
+            <div class="brand-section">
+                <h1>SHIM SYSTEMS</h1>
+                <p>Sovereign Operational AI for Secure Infrastructure</p>
+            </div>
+        </header>
+
+        <!-- Profile Introduction -->
+        <div class="intro-callout">
+            <p>
+                True operational capacity requires data systems that are local, deterministic, and held entirely within your physical custody. The <strong>SHIM Engine</strong> is a sovereign, layout-aware data engineering platform built to transform complex, high-liability construction documentation into instant structured insights. Running 100% on-premises, our system completely eliminates the data security hazards, layout inaccuracies, and unpredictable transaction fees associated with public cloud platforms.
+            </p>
+        </div>
+
+        <!-- Core Platform Capabilities -->
+        <section>
+            <div class="section-title">// Platform Capabilities</div>
+            <div class="capabilities-grid">
+                <div class="cap-card">
+                    <h3>Spatial Geometry Mapping</h3>
+                    <p>Bypasses traditional, brittle OCR systems to track layout vectors, multi-column tables, and nested engineering grids natively to maintain perfect structural data alignment.</p>
+                </div>
+                <div class="cap-card">
+                    <h3>UI-Only Storage Boundary</h3>
+                    <p>Enforces rigid data custody rules. Organisational files are processed transiently inside local container memory (RAM) and immediately purged post-analysis.</p>
+                </div>
+                <div class="cap-card">
+                    <h3>Deterministic Execution</h3>
+                    <p>Feeds high-density Markdown streams into local, offline compute units. Utilises hardcoded Python validation rules to completely eliminate generative hallucinations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Site Workloads Matrix -->
+        <section>
+            <div class="section-title">// Target Applications & Site Impacts</div>
+            <table class="matrix-table">
+                <thead>
+                    <tr>
+                        <th style="width: 35%;">Workload Target</th>
+                        <th style="width: 65%;">Core Operational Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Subcontractor Onboarding (SWMS)</strong></td>
+                        <td>Automatically scans incoming subcontractor safety PDFs at the site office. Flags missing risk controls, generic boilerplate text, and incomplete logs for rapid automated audits.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Structural Design Auditing</strong></td>
+                        <td>Parses dense engineering computation packets, layout drawing updates, and Regulation 126 certificates to cross-reference structural tolerances with zero manual exposure.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Commercial Variation Tracking</strong></td>
+                        <td>Processes unstructured multi-page supplier manifests, material invoices, and site log adjustments into clean schemas for immediate site financial reconciliation.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- The Four Sovereign Pillars -->
+        <section>
+            <div class="section-title">// Strategic Infrastructure Pillars</div>
+            <div class="pillars-container">
+                <div class="pillar-item">
+                    <h4>1. 100% Data Safe</h4>
+                    <p>Deploys as an air-gapped network sandbox on physical local server appliances. Zero site data or personal identifiers ever leave the room.</p>
+                </div>
+                <div class="pillar-item">
+                    <h4>2. Immediate Verification</h4>
+                    <p>Maintains perfect tabular relationships across layout-dense documents, supporting instant visual validation using programmatic bounding box overlays.</p>
+                </div>
+                <div class="pillar-item">
+                    <h4>3. Cost Predictability</h4>
+                    <p>Bypasses cloud utility metered credit models that penalise deep analysis. Delivered via a flat-rate local equipment lease with zero variable transaction fees.</p>
+                </div>
+                <div class="pillar-item">
+                    <h4>4. Frictionless Procurement</h4>
+                    <p>Structured as a low-value asset lease qualifying for operational expense (OpEx) pools. Fits inside local site budgets, bypassing corporate CapEx approval loops.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semantic Native Footer Element -->
+        <footer>
+            <div class="footer-text">Unlocking Productive Time. Safely.</div>
+            <a href="https://shimsystems.com" class="footer-link">shimsystems.com</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
